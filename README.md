@@ -1,7 +1,7 @@
 
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=megazron.megazron&left_color=blue&right_color=blue&left_text=Visitors" />
 
-<img align="right" src="https://readme-typing-svg.herokuapp.com/?font=Satisfy&size=35&center=true&vCenter=true&width=600&color=0077B6&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Gaus+Mohiuddin+Sayyad!;" />
+<img align="right" src="https://readme-typing-svg.herokuapp.com/?font=Satisfy&size=35&center=true&vCenter=true&width=600&color=0077B6&height=70&duration=4000&lines=Hello+There!+👋;+I'm+Gaus+Mohiuddin+Sayyad!;" />
 <br><br>
 <br><br>
 
