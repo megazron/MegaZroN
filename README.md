@@ -7,7 +7,7 @@
 
 ## About Me
 
-Hey there! I’m a **Innovator** and  **Builds the impossible with science**.  
+Hey there! I’m a **Innovator & an Robotics Engineer|** , I create impactful solutions for **real-world challenges, from space technology to assistive devices**.  
 I’ve worked as a **Research Intern at IIT Bombay** and **ISRO (NARL)**, focusing on **AI, Robotics, LiDAR, Satellites, and Embedded Systems**.  
 I’m also the **Winner of Smart India Hackathon 2023 & 2024** and hold **three German patents** in **Robotics and Assistive Technologies**.  
 Passionate about **Robotics, Space, Quantum Tech, and Healthcare Innovations**, I aim to create impactful solutions for the future.
