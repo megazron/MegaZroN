@@ -15,6 +15,47 @@ DISP = "'Barlow Condensed','Roboto Condensed','Arial Narrow','Helvetica Neue',Ar
 MONO = "'Share Tech Mono','JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace"
 BODY = "Saira,'Segoe UI',Helvetica,Arial,sans-serif"
 
+def prep_hologram(src="avatar.jpg", dst="avatar-holo.png", size=380):
+    """Turns assets/avatar.jpg into a green duotone hologram PNG with soft alpha edges. Needs Pillow; skipped if missing."""
+    try:
+        from PIL import Image, ImageOps, ImageEnhance, ImageFilter
+    except ImportError:
+        print("Pillow not installed - keeping existing", dst); return
+    im = Image.open(os.path.join(OUT, src)).convert("RGB")
+    w, h = im.size
+    side = int(min(w, h) * 0.86)
+    left, top = (w - side) // 2 - int(w * 0.03), int(h * 0.02)
+    im = im.crop((max(0, left), top, max(0, left) + side, top + side)).resize((size, size), Image.LANCZOS)
+    g = ImageOps.autocontrast(ImageOps.grayscale(im), cutoff=1)
+    g = ImageEnhance.Contrast(g).enhance(1.25)
+    # duotone: void -> omni -> near-white green
+    lut = []
+    stops = [(0, (3, 13, 5)), (110, (18, 92, 34)), (200, (61, 250, 70)), (255, (216, 255, 224))]
+    for v in range(256):
+        for (a, ca), (b, cb) in zip(stops, stops[1:]):
+            if a <= v <= b:
+                t = (v - a) / (b - a); lut.append(tuple(int(ca[i] + (cb[i] - ca[i]) * t) for i in range(3))); break
+    px = g.load(); out = Image.new("RGB", g.size)
+    op = out.load()
+    for y in range(size):
+        for x in range(size):
+            op[x, y] = lut[px[x, y]]
+    # radial alpha mask so the figure floats in the field
+    mask = Image.new("L", (size, size), 0)
+    from PIL import ImageDraw
+    d = ImageDraw.Draw(mask); d.ellipse((size*0.04, size*0.02, size*0.96, size*1.06), fill=255)
+    mask = mask.filter(ImageFilter.GaussianBlur(size * 0.06))
+    out.putalpha(mask)
+    out = out.quantize(colors=160, method=Image.Quantize.FASTOCTREE).convert("RGBA")
+    out.save(os.path.join(OUT, dst), optimize=True)
+    print("hologram written", os.path.getsize(os.path.join(OUT, dst)) // 1024, "KB")
+
+def holo_href(name="avatar-holo.png"):
+    import base64
+    p = os.path.join(OUT, name)
+    if not os.path.exists(p): return None
+    return "data:image/png;base64," + base64.b64encode(open(p, "rb").read()).decode()
+
 def esc(s): return s.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
 
 def defs(extra=""):
@@ -121,7 +162,9 @@ def rings(cx, cy, r, n=3, op=".3"):
 def hero():
     W, H = 1200, 430
     s = [svg_open(W, H, f'<clipPath id="dialclip"><circle cx="960" cy="190" r="104"/></clipPath>'
-                        f'<clipPath id="heroclip"><rect width="{W}" height="{H}"/></clipPath>')]
+                        f'<clipPath id="heroclip"><rect width="{W}" height="{H}"/></clipPath>'
+                        f'<pattern id="holoscan" width="5" height="5" patternUnits="userSpaceOnUse"><rect width="5" height="2" fill="{VOID}" fill-opacity=".45"/></pattern>'
+                        f'<linearGradient id="cyanscan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{CYAN}" stop-opacity="0"/><stop offset=".5" stop-color="{CYAN}" stop-opacity=".4"/><stop offset="1" stop-color="{CYAN}" stop-opacity="0"/></linearGradient>')]
     s.append(f'<g clip-path="url(#heroclip)">{binary_rain(W, H)}</g>')
     s.append(f'<ellipse cx="960" cy="210" rx="260" ry="200" fill="{OMNI}" fill-opacity=".05" filter="url(#glowlg)"/>')
     s.append(rings(960, 190, 190, 3))
@@ -172,7 +215,7 @@ def hero():
     s.append(chev(84, 340, 210, "PORTFOLIO  ▸ megazron.com", OMNI, True))
     s.append(chev(306, 340, 300, "OPEN TO ROBOTICS ROLES · SEP 2026", CYAN))
 
-    # ---- status dial with robot arm ----
+    # ---- main dial: holographic portrait ----
     cx, cy = 960, 190
     s.append(f'<circle cx="{cx}" cy="{cy}" r="104" fill="{DEEP}" fill-opacity=".85" stroke="{DIM}" stroke-width="2"/>')
     s.append(f'<circle cx="{cx}" cy="{cy}" r="96" fill="none" stroke="{OMNI}" stroke-opacity=".8" stroke-width="3" stroke-dasharray="2 8">'
@@ -180,10 +223,31 @@ def hero():
     s.append(f'<circle cx="{cx}" cy="{cy}" r="82" fill="none" stroke="{OMNI}" stroke-opacity=".35" stroke-dasharray="1 6"/>')
     s.append(f'<circle cx="{cx}" cy="{cy}" r="70" fill="none" stroke="{OMNI}" stroke-opacity=".9" stroke-width="2" stroke-dasharray="40 400" stroke-linecap="round">'
              f'<animateTransform attributeName="transform" type="rotate" from="360 {cx} {cy}" to="0 {cx} {cy}" dur="6s" repeatCount="indefinite"/></circle>')
-    # crosshair
     s.append(f'<g stroke="{OMNI}" stroke-opacity=".35"><line x1="{cx-104}" y1="{cy}" x2="{cx-60}" y2="{cy}"/><line x1="{cx+60}" y1="{cy}" x2="{cx+104}" y2="{cy}"/>'
              f'<line x1="{cx}" y1="{cy-104}" x2="{cx}" y2="{cy-60}"/><line x1="{cx}" y1="{cy+60}" x2="{cx}" y2="{cy+104}"/></g>')
-    # 7-DoF arm silhouette (base at bottom of dial)
+    href = holo_href()
+    holo = ""
+    if href:
+        sz = 248
+        holo = (f'<defs><image id="portrait" href="{href}" x="{cx-sz/2}" y="{cy-sz/2+16}" width="{sz}" height="{sz}"/></defs>'
+                f'<g filter="url(#glow)"><animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="4.4s" repeatCount="indefinite"/>'
+                # ghost copies for a chromatic hologram fringe
+                f'<use href="#portrait" x="-3" opacity=".28" style="mix-blend-mode:screen"/>'
+                f'<use href="#portrait" x="3" opacity=".28" style="mix-blend-mode:screen"/>'
+                f'<use href="#portrait">'
+                f'<animate attributeName="opacity" values="1;1;.86;1;1;.72;.95;1;1;.9;1" keyTimes="0;.3;.32;.34;.6;.61;.63;.66;.85;.87;1" dur="5.7s" repeatCount="indefinite"/></use></g>'
+                # dense hologram scanlines over the portrait only
+                f'<rect x="{cx-104}" y="{cy-104}" width="208" height="208" fill="url(#holoscan)"/>')
+    s.append(f'<g clip-path="url(#dialclip)">{holo}'
+             f'<rect x="{cx-104}" y="{cy-130}" width="208" height="54" fill="url(#cyanscan)"><animate attributeName="y" values="{cy-130};{cy+104}" dur="3.4s" repeatCount="indefinite"/></rect></g>')
+    s.append(f'<text x="{cx}" y="{cy+124}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{INK_DIM}" letter-spacing="2">HOLO FEED · LIVE</text>')
+    s.append(f'<text x="{cx-98}" y="{cy-112}" font-family="{MONO}" font-size="10" fill="{OMNI}" letter-spacing="1.5">STATUS</text>')
+    s.append(f'<text x="{cx+98}" y="{cy-112}" text-anchor="end" font-family="{MONO}" font-size="10" fill="{OMNI}" letter-spacing="1.5">LIVE ●<animate attributeName="opacity" values="1;.4;1" dur="1.6s" repeatCount="indefinite"/></text>')
+    s.append(f'<polygon points="{cx-48},{cy+136} {cx+48},{cy+136} {cx+96},{cy+192} {cx-96},{cy+192}" fill="url(#cone)"><animate attributeName="opacity" values=".85;.55;.85" dur="2.6s" repeatCount="indefinite"/></polygon>')
+    s.append(f'<ellipse cx="{cx}" cy="{cy+192}" rx="100" ry="8" fill="url(#base)" filter="url(#glow)"/>')
+
+    # ---- secondary dial: 7-DoF arm (teleop readout) ----
+    ax, ay, ar = 786, 330, 42
     arm = (f'<g stroke="{OMNI_HI}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)">'
            f'<path d="M{cx-2} {cy+62} L{cx-2} {cy+40}"/>'
            f'<g><animateTransform attributeName="transform" type="rotate" values="-6 {cx-2} {cy+40};6 {cx-2} {cy+40};-6 {cx-2} {cy+40}" dur="5s" repeatCount="indefinite"/>'
@@ -197,15 +261,11 @@ def hero():
            f'</g></g><circle cx="{cx-34}" cy="{cy-4}" r="5" fill="{VOID}" stroke-width="3"/></g>'
            f'<circle cx="{cx-2}" cy="{cy+40}" r="6" fill="{VOID}" stroke-width="3"/>'
            f'<path d="M{cx-22} {cy+62} h40" stroke-width="6"/></g>')
-    s.append(f'<g clip-path="url(#dialclip)">{arm}'
-             f'<rect x="{cx-104}" y="{cy-130}" width="208" height="30" fill="url(#scan)"><animate attributeName="y" values="{cy-130};{cy+104}" dur="3s" repeatCount="indefinite"/></rect></g>')
-    # dial readouts
-    s.append(f'<text x="{cx}" y="{cy+124}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{INK_DIM}" letter-spacing="2">DUAL-ARM TELEOP · KINOVA GEN3 · ROS 2</text>')
-    s.append(f'<text x="{cx-98}" y="{cy-112}" font-family="{MONO}" font-size="10" fill="{OMNI}" letter-spacing="1.5">STATUS</text>')
-    s.append(f'<text x="{cx+98}" y="{cy-112}" text-anchor="end" font-family="{MONO}" font-size="10" fill="{OMNI}" letter-spacing="1.5">ARMED ●<animate attributeName="opacity" values="1;.4;1" dur="1.6s" repeatCount="indefinite"/></text>')
-    # cone + base pedestal
-    s.append(f'<polygon points="{cx-48},{cy+136} {cx+48},{cy+136} {cx+96},{cy+192} {cx-96},{cy+192}" fill="url(#cone)"><animate attributeName="opacity" values=".85;.55;.85" dur="2.6s" repeatCount="indefinite"/></polygon>')
-    s.append(f'<ellipse cx="{cx}" cy="{cy+192}" rx="100" ry="8" fill="url(#base)" filter="url(#glow)"/>')
+    s.append(f'<circle cx="{ax}" cy="{ay}" r="{ar}" fill="{DEEP}" fill-opacity=".85" stroke="{DIM}" stroke-width="1.5"/>'
+             f'<circle cx="{ax}" cy="{ay}" r="{ar-5}" fill="none" stroke="{OMNI}" stroke-opacity=".7" stroke-width="2" stroke-dasharray="2 6">'
+             f'<animateTransform attributeName="transform" type="rotate" from="360 {ax} {ay}" to="0 {ax} {ay}" dur="20s" repeatCount="indefinite"/></circle>')
+    s.append(f'<g transform="translate({ax} {ay+6}) scale(.58) translate({-cx} {-cy-8})">{arm}</g>')
+    s.append(f'<text x="{ax}" y="{ay+ar+14}" text-anchor="middle" font-family="{MONO}" font-size="9.5" fill="{INK_DIM}" letter-spacing="1.5">TELEOP · <tspan fill="{OMNI}">ARMED ●<animate attributeName="opacity" values="1;.4;1" dur="1.6s" repeatCount="indefinite"/></tspan></text>')
 
     # ---- bottom telemetry bar ----
     s.append(hazard_bar(0, H-28, W, 5))
@@ -446,7 +506,7 @@ def footer():
     open(os.path.join(OUT, "footer.svg"), "w").write("".join(s))
 
 if __name__ == "__main__":
-    hero(); timeline(); systems(); telemetry(); divider(); footer()
+    prep_hologram(); hero(); timeline(); systems(); telemetry(); divider(); footer()
     header("brief", "Mission brief", "Who I am", "ID 0x4D5A · CALLSIGN MEGAZRON")
     header("log", "Where I have been", "Mission log", "07 WAYPOINTS · 2021 → 2026")
     header("experience", "Where I have worked", "Experience", "09 ENTRIES")
