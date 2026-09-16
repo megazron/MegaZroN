@@ -14,20 +14,6 @@
 
 <img src="assets/telemetry.svg" width="100%" alt="53 awards · 10 patents and papers · 3 German patents · 2× SIH winner · 800+ developers mentored · 15k LinkedIn followers">
 
-
-## Showcase — a dozen standalone tools built this month
-
-Each is its own installable, tested repository. The grid below is live simulation and CLI capture from every one.
-
-<img src="assets/showcase.gif" width="100%" alt="Twelve tool demos: RViz Kinova Gen3 simulations and CLI captures">
-
-**Robotics / ROS 2 toolkits** — [ShortStop](https://github.com/megazron/shortstop-sim2real) (sim-to-real gap) · [SmoothOperator](https://github.com/megazron/smoothoperator-teleop) (teleop signal) · [DDSDetective](https://github.com/megazron/ddsdetective-ros2) (silent DDS delivery) · [CamScout](https://github.com/megazron/camscout-usbip) (usbip cameras) · [TwinTruth](https://github.com/megazron/twin-truth) (digital-twin source of truth) · [CrossWire](https://github.com/megazron/crosswire-lint) (ROS 2 interaction-bug lint)
-
-**Embodied-AI research tools** — [RoboFrontier](https://github.com/megazron/robofrontier-matrix) (open-problems matrix) · [CleanBench](https://github.com/megazron/cleanbench-eval) (contamination-controlled eval) · [SceneBreaker](https://github.com/megazron/scenebreaker-vla) (VLA scene red-team) · [SkillCrate](https://github.com/megazron/skillcrate-spec) (portable skill format) · [TrustHorizon](https://github.com/megazron/trusthorizon-worldmodel) (world-model trust metrics)
-
-**Language** — [Robot Chalao](https://github.com/megazron/robot-chalao) — a Hinglish programming language for any ROS 2 robot.
-
-
 ## Showcase
 
 A dozen standalone tools built this month, each a runnable solution to a real robotics problem. Every demo below is a real RViz (Kinova Gen3) simulation or a real CLI run.
@@ -46,7 +32,6 @@ A dozen standalone tools built this month, each a runnable solution to a real ro
 - **[CrossWire](https://github.com/megazron/crosswire-lint)** — static+live linter for ROS 2 interaction bugs
 - **[SkillCrate](https://github.com/megazron/skillcrate-spec)** — a portable, verifiable robot-skill package format
 - **[TrustHorizon](https://github.com/megazron/trusthorizon-worldmodel)** — trust metrics for learned world models
-
 
 <img src="assets/h-brief.svg" width="100%" alt="Mission brief — who I am">
 
