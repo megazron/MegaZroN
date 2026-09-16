@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="176" viewBox="0 0 390 176" role="img">
+<defs>
+  <radialGradient id="field" cx="22%" cy="35%" r="80%">
+    <stop offset="0" stop-color="#0a2e11"/><stop offset=".55" stop-color="#06180a"/><stop offset="1" stop-color="#030d05"/>
+  </radialGradient>
+  <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3dfa46" stop-opacity=".32"/><stop offset="1" stop-color="#3dfa46" stop-opacity=".02"/>
+  </linearGradient>
+  <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#d8ffe0"/><stop offset=".38" stop-color="#7fd18c"/><stop offset="1" stop-color="#2c6b36"/>
+  </linearGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3dfa46" stop-opacity="0"/><stop offset=".5" stop-color="#3dfa46" stop-opacity=".35"/><stop offset="1" stop-color="#3dfa46" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="glint" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3dfa46" stop-opacity="0"/><stop offset=".5" stop-color="#3dfa46" stop-opacity=".22"/><stop offset="1" stop-color="#3dfa46" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#3dfa46" stroke-opacity=".07"/>
+  </pattern>
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#000" fill-opacity=".28"/>
+  </pattern>
+  <pattern id="hazard" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="7" height="14" fill="#3dfa46" fill-opacity=".55"/>
+    <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="14 0" additive="sum" dur="1.2s" repeatCount="indefinite"/>
+  </pattern>
+  <pattern id="dashbar" width="1" height="7" patternUnits="userSpaceOnUse">
+    <rect width="3" height="2" fill="#3dfa46"/>
+  </pattern>
+  <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowlg" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  
+</defs>
+<rect width="390" height="176" fill="url(#field)"/>
+<rect width="390" height="176" fill="url(#grid)"/>
+<path d="M4 4H370L386 20V172H4Z" fill="#0a2e11" fill-opacity=".92" stroke="#1f7a2c" stroke-width="1"/><rect x="4" y="24" width="3" height="128" fill="url(#dashbar)" opacity=".7"/><path d="M364 5h21v21" fill="none" stroke="#3dfa46" stroke-opacity=".8"/><rect x="4" y="4" width="0" height="168" fill="url(#glint)"><animate attributeName="x" values="-120;400" dur="4.5s" repeatCount="indefinite"/><animate attributeName="width" values="120;120" dur="4.5s" repeatCount="indefinite"/></rect><circle cx="312" cy="86.0" r="60" fill="#3dfa46" fill-opacity=".05"/><circle cx="312" cy="86.0" r="60" fill="none" stroke="#3dfa46" stroke-opacity=".35" stroke-dasharray="3 6"><animateTransform attributeName="transform" type="rotate" from="0 312 86.0" to="360 312 86.0" dur="24s" repeatCount="indefinite"/></circle><rect x="302" y="78.0" width="20" height="40" rx="5" fill="#114a1c" stroke="#8dffb0" stroke-width="2" filter="url(#glow)"/><ellipse cx="312" cy="70.0" rx="52" ry="5" fill="none" stroke="#3dfa46" stroke-width="2" stroke-dasharray="30 10"><animate attributeName="rx" values="52;8;52" dur="0.25s" repeatCount="indefinite"/></ellipse><ellipse cx="312" cy="58.0" rx="52" ry="5" fill="none" stroke="#3dfa46" stroke-width="2" stroke-dasharray="30 10"><animate attributeName="rx" values="52;8;52" dur="0.2s" repeatCount="indefinite"/></ellipse><line x1="312" y1="54.0" x2="312" y2="78.0" stroke="#8dffb0" stroke-width="3"/><path d="M290 118.0 l-10 12 M334 118.0 l10 12 M302 114.0 h20" stroke="#3dfa46" stroke-width="2.5" stroke-linecap="round" fill="none"/><circle cx="24" cy="30" r="3.5" fill="#3dfa46" filter="url(#glow)"><animate attributeName="r" values="3.5;2.1;3.5" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.55;1" dur="2.2s" repeatCount="indefinite"/></circle><text x="36" y="34" font-family="'Share Tech Mono','JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="10" fill="#3dfa46" letter-spacing="2">SIH WINNER · DE PATENT</text><text x="22" y="60" font-family="'Barlow Condensed','Roboto Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#eafff0" letter-spacing=".5">COAXIAL SURVEILLANCE</text><text x="22" y="84" font-family="'Barlow Condensed','Roboto Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#eafff0" letter-spacing=".5">DRONE</text><text x="22" y="102" font-family="Saira,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" fill="#b8e8c0">Autonomous coaxial drone for port surveillance.</text><text x="22" y="117" font-family="Saira,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" fill="#b8e8c0">Smart India Hackathon 2023 winner, German</text><text x="22" y="132" font-family="Saira,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" fill="#b8e8c0">patent DE202025102068U1.</text><rect x="22" y="136" width="33" height="18" fill="#114a1c" stroke="#1f7a2c"/><rect x="22" y="136" width="2" height="18" fill="#3dfa46"/><text x="39.5" y="149" text-anchor="middle" font-family="'Share Tech Mono','JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#b8e8c0">C++</text><rect x="60" y="136" width="66" height="18" fill="#114a1c" stroke="#1f7a2c"/><rect x="60" y="136" width="2" height="18" fill="#3dfa46"/><text x="94.0" y="149" text-anchor="middle" font-family="'Share Tech Mono','JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#b8e8c0">Autonomy</text><rect x="131" y="136" width="47" height="18" fill="#114a1c" stroke="#1f7a2c"/><rect x="131" y="136" width="2" height="18" fill="#3dfa46"/><text x="155.5" y="149" text-anchor="middle" font-family="'Share Tech Mono','JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#b8e8c0">Ports</text><rect x="183" y="136" width="53" height="18" fill="#114a1c" stroke="#1f7a2c"/><rect x="183" y="136" width="2" height="18" fill="#3dfa46"/><text x="210.5" y="149" text-anchor="middle" font-family="'Share Tech Mono','JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="10.5" fill="#b8e8c0">Patent</text><rect x="4" y="164" width="382" height="4" fill="url(#hazard)"/><line x1="4" y1="169" x2="386" y2="169" stroke="#3dfa46" stroke-opacity=".3"/><rect width="390" height="176" fill="url(#scanlines)" pointer-events="none"/>
+</svg>
