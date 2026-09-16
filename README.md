@@ -14,6 +14,27 @@
 
 <img src="assets/telemetry.svg" width="100%" alt="53 awards · 10 patents and papers · 3 German patents · 2× SIH winner · 800+ developers mentored · 15k LinkedIn followers">
 
+
+## Showcase
+
+A dozen standalone tools built this month, each a runnable solution to a real robotics problem. Every demo below is a real RViz (Kinova Gen3) simulation or a real CLI run.
+
+![Showcase](assets/showcase.gif)
+
+- **[Robot Chalao](https://github.com/megazron/robot-chalao)** — a Hinglish programming language for any ROS 2 robot
+- **[ShortStop](https://github.com/megazron/shortstop-sim2real)** — close the joint-space sim-to-real gap
+- **[SmoothOperator](https://github.com/megazron/smoothoperator-teleop)** — teleop signal conditioning (1-Euro, speed clip)
+- **[DDSDetective](https://github.com/megazron/ddsdetective-ros2)** — find the cause of silent ROS 2 delivery
+- **[CamScout](https://github.com/megazron/camscout-usbip)** — USB/RTSP camera layered doctor for WSL2
+- **[TwinTruth](https://github.com/megazron/twin-truth)** — one dated source of truth for a digital twin
+- **[RoboFrontier](https://github.com/megazron/robofrontier-matrix)** — a sourced matrix of open robotics problems
+- **[CleanBench](https://github.com/megazron/cleanbench-eval)** — contamination-controlled robot-policy evaluation
+- **[SceneBreaker](https://github.com/megazron/scenebreaker-vla)** — defensive scene-attack testing for VLA policies
+- **[CrossWire](https://github.com/megazron/crosswire-lint)** — static+live linter for ROS 2 interaction bugs
+- **[SkillCrate](https://github.com/megazron/skillcrate-spec)** — a portable, verifiable robot-skill package format
+- **[TrustHorizon](https://github.com/megazron/trusthorizon-worldmodel)** — trust metrics for learned world models
+
+
 <img src="assets/h-brief.svg" width="100%" alt="Mission brief — who I am">
 
 > **Hello · Assalamu Alaikum · नमस्ते · नमस्कार** &nbsp;— I'm Gaus, a Robotics Software Engineer finishing an **MSc in Human & Biological Robotics at Imperial College London** (Sep 2026, predicted Distinction).
