@@ -23,7 +23,7 @@ I build the layer where <b>perception turns into action</b> — vision-language-
 </sub></p>
 
 <details>
-<summary><b>▸ OPEN THE FULL MISSION LOG</b> — experience · patents · papers · awards · stack</summary>
+<summary><b>OPEN THE FULL MISSION LOG</b> — experience · patents · papers · awards · stack</summary>
 <br>
 
 **Experience**
