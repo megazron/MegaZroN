@@ -111,14 +111,97 @@ def brackets(c, x, y, w, h, s=18, col=OMNI):
     c.add(f'<g fill="none" stroke="{col}" stroke-width="2.2"><path d="M{x} {y+s}V{y}H{x+s}M{x+w-s} {y}H{x+w}V{y+s}M{x+w} {y+h-s}V{y+h}H{x+w-s}M{x+s} {y+h}H{x}V{y+h-s}"/></g>')
 
 
-def holo_avatar(size=164):
+def holo_avatar(size=164, crop=None):
     """Green duotone hologram of the avatar, small enough to embed."""
     img = Image.open(ASSETS / "avatar.jpg").convert("L")
+    if crop: img = img.crop(crop)
     img = ImageOps.fit(img, (size, size))
     img = ImageOps.autocontrast(img, cutoff=2)
     duo = ImageOps.colorize(img, black="#020a03", mid="#1f8a2c", white="#d8ffe0")
     buf = io.BytesIO(); duo.save(buf, "JPEG", quality=62, optimize=True)
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+# ---------------------------------------------------------------- the binary dial
+ADV = 0.54                      # Share Tech Mono digit advance (em)
+RNG = __import__("random").Random(26)
+
+
+def bits(n):
+    return "".join(RNG.choice("01") for _ in range(n))
+
+
+def ring(c, cx, cy, r, size, fill, op, dur, rev=False, pid="r"):
+    """A circle of binary digits that slowly rotates."""
+    import math
+    n = int(2 * math.pi * r / (size * ADV + 2))
+    c.used[MONO] += "01"
+    c.add(f'<path id="{pid}" d="M{cx} {cy - r}a{r} {r} 0 1 1 -.01 0" fill="none"/>')
+    frm, to = (360, 0) if rev else (0, 360)
+    c.add(f'<g opacity="{op}"><text font-family="{MONO}" font-size="{size}" fill="{fill}" letter-spacing="2">'
+          f'<textPath href="#{pid}">{bits(n)}</textPath></text>'
+          f'<animateTransform attributeName="transform" type="rotate" from="{frm} {cx} {cy}" to="{to} {cx} {cy}" dur="{dur}s" repeatCount="indefinite"/></g>')
+
+
+def binary_face(c, cx, cy, r, n=34):
+    """The hologram avatar as a matrix of 0s and 1s: brighter pixels = brighter digits. Two digit sets swap to flicker."""
+    img = Image.open(ASSETS / "avatar.jpg").convert("L").crop((200, 40, 580, 420))      # head and shoulders
+    img = ImageOps.autocontrast(img.resize((n, n), Image.LANCZOS), cutoff=1)
+    px = [int(255 * (v / 255) ** .6) for v in img.getdata()]                             # lift the shadows
+    cell = 2 * r / n; fs = cell * 1.05; ls = cell - ADV * fs
+    levels = [(60, .18, OMNI), (105, .4, OMNI), (150, .68, OMNI), (200, 1, OMNI), (256, 1, CORE)]
+    c.used[MONO] += "01"
+    out = []
+    for frame in range(2):
+        g = []
+        for li, (hi, op, col) in enumerate(levels):
+            lo = levels[li - 1][0] if li else 28
+            rows = []
+            for y in range(n):
+                row = "".join(RNG.choice("01") if lo <= px[y * n + x] < hi else " " for x in range(n))
+                if row.strip():
+                    rows.append(f'<tspan x="{cx - r:.1f}" y="{cy - r + (y + .85) * cell:.1f}">{row.rstrip()}</tspan>')
+            g.append(f'<text xml:space="preserve" font-family="{MONO}" font-size="{fs:.2f}" letter-spacing="{ls:.2f}" fill="{col}" fill-opacity="{op}">{"".join(rows)}</text>')
+        vals = "1;0" if frame == 0 else "0;1"
+        out.append(f'<g opacity="{1 - frame}"><animate attributeName="opacity" values="{vals}" dur="1.6s" calcMode="discrete" repeatCount="indefinite"/>{"".join(g)}</g>')
+    c.add("".join(out))
+
+
+def binary_dial(c, cx, cy, R):
+    import math
+    c.add(f'<circle cx="{cx}" cy="{cy}" r="{R + 40}" fill="{OMNI}" opacity=".05" filter="url(#glowlg)"/>')
+    ring(c, cx, cy, R + 30, 11, OMNI, .45, 90, pid="rO")
+    c.add(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{LINE}" stroke-width="7"/>')
+    c.add(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{OMNI}" stroke-width="2" opacity=".9"/>')
+    ring(c, cx, cy, R - 18, 13, OMNI, .7, 50, rev=True, pid="rM")
+    ring(c, cx, cy, R - 38, 10, CYAN, .35, 70, pid="rI")
+    # six form nodes, each labelled with its number in binary
+    step, hold = 2.6, 2.2
+    N = len(FORMS); T = N * step
+    for i in range(N):
+        a = math.radians(-90 + i * 60); x, y = cx + R * math.cos(a), cy + R * math.sin(a)
+        c.add(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="27" fill="{VOID}" stroke="{OMNI}" stroke-width="2"/>')
+        c.text(round(x, 1), round(y + 6, 1), format(i + 1, "03b"), MONO, 17, OMNI, anchor="middle", ls=1, extra='filter="url(#glow)"')
+    vals, kts = [], []
+    for i in range(N):
+        t0 = i * step / T; t1 = (i * step + hold) / T
+        vals += [f"{i * 60} {cx} {cy}", f"{i * 60} {cx} {cy}"]; kts += [t0, t1]
+    vals.append(f"{N * 60} {cx} {cy}"); kts.append(1)
+    kt = ";".join(f"{k:.4f}" for k in kts)
+    c.add(f'<g><circle cx="{cx}" cy="{cy - R}" r="35" fill="none" stroke="{OMNI}" stroke-width="3.2" filter="url(#glow)"/>'
+          f'<path d="M{cx - 8} {cy - R - 46}l8 9 8-9z" fill="{OMNI}"/>'
+          f'<animateTransform attributeName="transform" type="rotate" values="{";".join(vals)}" keyTimes="{kt}" dur="{T}s" repeatCount="indefinite" calcMode="spline" keySplines="{";".join(["0 0 1 1", ".6 0 .2 1"] * N)}"/></g>')
+    # hologram core: the face in binary, a projector beam, a scan sweep
+    hr = 74
+    c.add(f'<defs><clipPath id="holo"><circle cx="{cx}" cy="{cy - 6}" r="{hr}"/></clipPath></defs>')
+    c.add(f'<path d="M{cx - 64} {cy + 80}L{cx - 22} {cy + 8}h44l42 72z" fill="{OMNI}" opacity=".08"/>')
+    c.add(f'<ellipse cx="{cx}" cy="{cy + 82}" rx="66" ry="9" fill="{OMNI}" opacity=".5" filter="url(#glow)"/>')
+    c.add(f'<circle cx="{cx}" cy="{cy - 6}" r="{hr}" fill="{VOID}"/>')
+    c.add(f'<g clip-path="url(#holo)"><image href="{holo_avatar(120, crop=(200, 40, 580, 420))}" x="{cx - hr}" y="{cy - 6 - hr}" width="{2 * hr}" height="{2 * hr}" opacity=".38"/>')
+    binary_face(c, cx, cy - 6, hr)
+    c.add(f'<rect x="{cx - hr}" y="{cy - 130}" width="{2 * hr}" height="44" fill="url(#sweep)"><animate attributeName="y" values="{cy - 130};{cy + 70}" dur="3s" repeatCount="indefinite"/></rect></g>')
+    c.add(f'<circle cx="{cx}" cy="{cy - 6}" r="{hr}" fill="none" stroke="{OMNI}" stroke-width="2.4" filter="url(#glow)"/>')
+
 
 
 # ---------------------------------------------------------------- the hero
@@ -149,39 +232,10 @@ def hero():
     c.add(f'<path d="M388 452h170l14 16-14 16H388l14-16z" fill="none" stroke="{OMNI}" stroke-width="1.6"/>')
     c.text(479, 473, "MEGAZRON.COM", DISP, 17, OMNI, anchor="middle", ls=1.5)
 
-    # right: the dial
+    # right: the dial, drawn entirely in 0s and 1s
     cx, cy, R = 900, 236, 150
-    c.add(f'<circle cx="{cx}" cy="{cy}" r="{R+40}" fill="{OMNI}" opacity=".05" filter="url(#glowlg)"/>')
-    c.add(f'<g opacity=".55"><circle cx="{cx}" cy="{cy}" r="{R+26}" fill="none" stroke="{OMNI}" stroke-width="1.2" stroke-dasharray="2 9"><animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="60s" repeatCount="indefinite"/></circle></g>')
-    c.add(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{LINE}" stroke-width="7"/>')
-    c.add(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{OMNI}" stroke-width="2" opacity=".9"/>')
-    c.add(f'<g><circle cx="{cx}" cy="{cy}" r="{R-24}" fill="none" stroke="{OMNI}" stroke-width="3" stroke-dasharray="6 14" opacity=".55"><animateTransform attributeName="transform" type="rotate" from="360 {cx} {cy}" to="0 {cx} {cy}" dur="40s" repeatCount="indefinite"/></circle></g>')
-    # six form nodes around the ring
-    step, hold = 2.6, 2.2
-    N = len(FORMS); T = N * step
-    import math
-    for i, f in enumerate(FORMS):
-        a = math.radians(-90 + i * 60); x, y = cx + R * math.cos(a), cy + R * math.sin(a)
-        c.add(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="27" fill="{VOID}" stroke="{OMNI}" stroke-width="2"/>')
-        c.add(f'<g transform="translate({x - 15:.1f} {y - 15:.1f}) scale(.625)">{icon(f[5], OMNI)}</g>')
-    # selector that clicks from form to form
-    vals, kts = [], []
-    for i in range(N):
-        t0 = i * step / T; t1 = (i * step + hold) / T
-        vals += [f"{i * 60} {cx} {cy}", f"{i * 60} {cx} {cy}"]; kts += [t0, t1]
-    vals.append(f"{N * 60} {cx} {cy}"); kts.append(1)
-    kt = ";".join(f"{k:.4f}" for k in kts)
-    c.add(f'<g><circle cx="{cx}" cy="{cy - R}" r="35" fill="none" stroke="{OMNI}" stroke-width="3.2" filter="url(#glow)"/>'
-          f'<path d="M{cx - 8} {cy - R - 46}l8 9 8-9z" fill="{OMNI}"/>'
-          f'<animateTransform attributeName="transform" type="rotate" values="{";".join(vals)}" keyTimes="{kt}" dur="{T}s" repeatCount="indefinite" calcMode="spline" keySplines="{";".join(["0 0 1 1", ".6 0 .2 1"] * N)}"/></g>')
-    # hologram core
-    c.add(f'<defs><clipPath id="holo"><circle cx="{cx}" cy="{cy - 6}" r="70"/></clipPath></defs>')
-    c.add(f'<path d="M{cx - 64} {cy + 78}L{cx - 22} {cy + 8}h44l42 70z" fill="{OMNI}" opacity=".10"/>')
-    c.add(f'<ellipse cx="{cx}" cy="{cy + 80}" rx="66" ry="9" fill="{OMNI}" opacity=".55" filter="url(#glow)"/>')
-    c.add(f'<g clip-path="url(#holo)"><image href="{holo_avatar()}" x="{cx - 70}" y="{cy - 76}" width="140" height="140" opacity=".92"><animate attributeName="opacity" values=".92;.78;.92;.92;.6;.92" keyTimes="0;.04;.08;.6;.62;1" dur="5s" repeatCount="indefinite"/></image>'
-          f'<rect x="{cx - 70}" y="{cy - 76}" width="140" height="140" fill="url(#scan)"/>'
-          f'<rect x="{cx - 70}" y="{cy - 120}" width="140" height="40" fill="url(#sweep)"><animate attributeName="y" values="{cy - 120};{cy + 60}" dur="3s" repeatCount="indefinite"/></rect></g>')
-    c.add(f'<circle cx="{cx}" cy="{cy - 6}" r="70" fill="none" stroke="{OMNI}" stroke-width="2.4" filter="url(#glow)"/>')
+    binary_dial(c, cx, cy, R)
+    step = 2.6; N = len(FORMS); T = N * step
     # form readout below the dial, synced with the selector
     for i, f in enumerate(FORMS):
         on0 = (i * step + .35) / T
