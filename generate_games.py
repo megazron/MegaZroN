@@ -15,13 +15,18 @@ Run:   python generate_games.py           (needs fonttools + brotli, like genera
 Test:  python tests/test_graph.py
 """
 
+import base64
+import io
 import itertools
 import math
 import re
 import shutil
 from pathlib import Path
 
-from generate_assets import (CORE, CYAN, DIM, DISP, FIELD, HAZARD, INK, LINE, OMNI, VOID, Canvas, esc, font_face, notched)
+from fontTools import subset
+from fontTools.ttLib import TTFont
+
+from generate_assets import (CORE, CYAN, DIM, DISP, FIELD, HAZARD, INK, LINE, OMNI, VOID, Canvas, esc, notched)
 
 ROOT = Path(__file__).resolve().parent
 PAGES_URL = "https://megazron.github.io/MegaZroN/"
@@ -60,6 +65,15 @@ def backdrop(w, h):
             f'<pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="{OMNI}" stroke-opacity=".06"/></pattern></defs>'
             f'<rect width="{w}" height="{h}" fill="url(#f)"/><rect width="{w}" height="{h}" fill="url(#g)"/>'
             f'<path d="M10 28V10H28M{w-28} 10H{w-10}V28M{w-10} {h-28}V{h-10}H{w-28}M28 {h-10}H10V{h-28}" fill="none" stroke="{OMNI}" stroke-width="2"/>')
+
+
+def font_face(family, ttf, text):
+    """One embedded font, subset to the glyphs in `text`. No timestamp, so the same input gives the same bytes."""
+    opts = subset.Options(); opts.flavor = "woff2"; opts.layout_features = ["kern"]; opts.name_IDs = []; opts.notdef_outline = True
+    font = TTFont(ROOT / "fonts" / ttf, recalcTimestamp=False)
+    sub = subset.Subsetter(opts); sub.populate(text=text + " "); sub.subset(font)
+    buf = io.BytesIO(); font.flavor = "woff2"; font.save(buf)
+    return f"@font-face{{font-family:{family};src:url(data:font/woff2;base64,{base64.b64encode(buf.getvalue()).decode()}) format('woff2')}}"
 
 
 def write(path, text):
