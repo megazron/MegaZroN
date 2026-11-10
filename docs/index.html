@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Teach the Arm · MegaZroN</title>
+<meta name="description" content="Show a 3D robot arm a pick and place task. It learns the order and repeats it, even after a shuffle.">
+<meta name="theme-color" content="#030d05">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23030d05'/%3E%3Cpath d='M8 26h16M16 26V16l-6-6 4-5M14 5l5 3' fill='none' stroke='%233dfa46' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/barlow-xb-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/share-tech-mono.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="modulepreload" href="vendor/three.module.min.js">
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<header id="top">
+  <div class="brand">
+    <h1>TEACH THE ARM</h1>
+    <span class="tag">LEARNING FROM DEMONSTRATION</span>
+  </div>
+  <nav class="tools">
+    <div class="levels" id="levels" role="group" aria-label="Level"></div>
+    <button id="btn-mute" class="tool" aria-label="Sound on or off">SND ON</button>
+    <button id="btn-how" class="tool" aria-label="How it works">HOW?</button>
+  </nav>
+</header>
+
+<main id="stage">
+  <canvas id="scene" aria-label="3D robot arm scene. Drag to move the gripper, tap to grip."></canvas>
+  <div class="overlay tl">
+    <div id="level-name" class="lvl"></div>
+    <div id="goal" class="goal"></div>
+    <div id="status" class="status"></div>
+  </div>
+  <div class="overlay tr">
+    <div id="mode-tag" class="mode">TEACH</div>
+    <div id="score" class="score"></div>
+  </div>
+  <div id="hint" class="hint"></div>
+  <button id="btn-grip" class="grip">GRIP</button>
+  <div id="boot" class="boot">BOOTING ARM...</div>
+</main>
+
+<section id="panel">
+  <div class="strip-head"><span id="strip-title">DEMONSTRATION</span><span id="strip-info"></span></div>
+  <ol id="timeline" class="timeline"></ol>
+  <div id="result" class="result" hidden></div>
+  <div id="share" class="share" hidden><span id="share-text"></span><button id="btn-copy" class="mini">COPY</button></div>
+  <div id="buttons" class="buttons"></div>
+</section>
+
+<div id="how" class="modal" hidden>
+  <div class="card" role="dialog" aria-modal="true" aria-labelledby="how-title">
+    <h2 id="how-title">HOW IT WORKS</h2>
+    <p><b>You are the teacher.</b> Drag to move the gripper. Tap, press GRIP or hit Space to grab what is under it, carry it, and tap again to let go.</p>
+    <p><b>Learning from demonstration.</b> The arm does not record your mouse. Each time you place something it writes one line: which object, where it went (a pad, or on top of another object), and the small offsets of your grasp and placement. That ordered list is the whole program.</p>
+    <p><b>Repeat and shuffle.</b> On "Teach done" the robot reads the list, looks up where things are right now, and plans its own path: approach above, descend, grasp, lift, move, place. That is why it still works when the objects and pads move.</p>
+    <p><b>Inverse kinematics.</b> You only say where the hand should be. Damped least squares IK works out the six joint angles that put it there, many times a second, and respects each joint limit.</p>
+    <p><b>It copies mistakes too.</b> Teach the wrong order and it will proudly repeat the wrong order. Fewer demos and fewer steps score higher.</p>
+    <p class="links">I build this kind of thing for real robots: <a href="https://github.com/megazron/text-to-robot" target="_blank" rel="noopener">megazron/text-to-robot</a> · <a href="https://github.com/megazron" target="_blank" rel="noopener">back to my GitHub</a></p>
+    <p class="fine">three.js (MIT), Barlow Condensed and Share Tech Mono (OFL). No tracking, no network calls.</p>
+    <button id="btn-how-close" class="btn primary">GOT IT</button>
+  </div>
+</div>
+
+<noscript><p style="color:#3dfa46;padding:2em;font-family:monospace">This game needs JavaScript and WebGL.</p></noscript>
+<script type="module" src="game.js"></script>
+</body>
+</html>
