@@ -37,20 +37,46 @@ with sync_playwright() as p:
     browser = p.chromium.launch()
     pg = browser.new_page(viewport={"width": 1280, "height": 1100})
 
+    def steady(fn):
+        """GitHub re-renders after load and can detach an element mid-action. Try again like a person would."""
+        def run(*args):
+            for attempt in range(6):
+                try:
+                    return fn(*args)
+                except AssertionError:
+                    raise
+                except Exception as e:
+                    if attempt == 5:
+                        raise
+                    print("  (retry:", str(e).splitlines()[0][:70] + ")")
+                    pg.wait_for_timeout(1500)
+        return run
+
+    @steady
     def shot(name):
         pg.locator(f"{BODY} img").first.scroll_into_view_if_needed()
         pg.wait_for_timeout(700)
         pg.screenshot(path=str(out / f"{name}.png"))
         print("shot", name)
 
+    @steady
     def click(alt):
         a = pg.locator(f'{BODY} a:has(img[alt="{alt}"])').first
+        href = a.get_attribute("href")
         a.scroll_into_view_if_needed()
+        pg.wait_for_timeout(1200)                                   # be polite to github.com
         a.click()
-        pg.wait_for_url(lambda u: True, wait_until="load")
-        pg.wait_for_selector(f"{BODY} img")
+        pg.wait_for_url("**" + href, timeout=45000)                 # GitHub swaps pages in place, so wait for the new address
+        try:
+            pg.wait_for_selector(f"{BODY} img", timeout=12000)
+        except Exception:                                           # GitHub's in-place page swap sometimes stalls: reload like a visitor would
+            print("  (page swap stalled, reloading)")
+            pg.reload()
+            pg.wait_for_selector(f"{BODY} img", timeout=45000)
+        pg.wait_for_timeout(400)
         print("  click", alt, "->", pg.url.split("MegaZroN")[-1])
 
+    @steady
     def animating(what, index=0):
         img = pg.locator(f"{BODY} img").nth(index)
         img.scroll_into_view_if_needed()
@@ -66,12 +92,14 @@ with sync_playwright() as p:
         print(f"  {what}: image loaded, animation playing = {moved}")
         assert moved, what
 
+    @steady
     def home():
         pg.goto(start)
         pg.wait_for_selector(f'{BODY} img[alt^="Teach the arm"]')
+        pg.wait_for_timeout(1500)
+        pg.locator('img[alt^="Teach the arm"]').first.scroll_into_view_if_needed()
 
     home()
-    pg.locator('img[alt^="Teach the arm"]').first.scroll_into_view_if_needed()
     pg.wait_for_timeout(2500)
     broken = pg.evaluate(f"[...document.querySelectorAll('{BODY} img')].filter(i => !(i.complete && i.naturalWidth > 0)).map(i => i.alt)")
     assert not broken, broken

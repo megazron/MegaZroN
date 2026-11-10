@@ -758,6 +758,12 @@ def strip_backdrop(inner):
     return inner.split('stroke-width="2"/>', 1)[1]
 
 
+def branded(card):
+    """The two README cards sit next to the hero, so their display text gets the real brand font."""
+    face = font_face(DISP, "BarlowCondensed-ExtraBoldItalic.ttf", "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-+")
+    return card.replace(f".d{{font-family:{DISPF}", f"{face}.d{{font-family:{DISP},{DISPF}", 1)
+
+
 def readme_block():
     arm_btn = "".join(f'<a href="arm/{o}.md"><img src="arm/btn/pick-{o}.svg" width="16%" alt="Pick {OBJ[o][0].lower()}"></a>\n' for o in "rby")
     bat_btn = "".join(f'<a href="battle/s{st}/start.md"><img src="battle/btn/stage{st}.svg" width="16%" alt="Fight the {STAGES[st]["name"].title()}"></a>\n' for st in STAGES)
@@ -785,9 +791,9 @@ if __name__ == "__main__":
     for stage in STAGES:
         print(f"battle stage {stage}: {len(battle_graph(stage))} reachable states")
     a = build_arm()
-    write(ROOT / "arm" / "card.svg", arm_card())
+    write(ROOT / "arm" / "card.svg", branded(arm_card()))
     bp, bi = build_battle()
-    write(ROOT / "battle" / "card.svg", battle_card())
+    write(ROOT / "battle" / "card.svg", branded(battle_card()))
     update_readme()
     for d in ("arm", "battle"):
         files = [f for f in (ROOT / d).rglob("*") if f.is_file()]
