@@ -295,7 +295,7 @@ def arm_scene(start, placed, motion, steps, mode, caption, pending=None, held=No
     mw = 30 + len(mode) * 8.6
     b.append(f'<path d="M{n(AW-26-mw)} 28h{n(mw)}v18l-8 8h{n(-mw+8)}z" fill="none" stroke="{mode_col}" stroke-width="1.5"/>'
              f'<text x="{n(AW-26-mw/2)}" y="46" font-size="13" fill="{mode_col}" text-anchor="middle" letter-spacing="1.5">{esc(mode)}</text>')
-    b.append(f'<text x="26" y="78" font-size="12" fill="{DIM}" letter-spacing="2">{"LEARNED ORDER" if not pending and len(steps) == 3 else "TAUGHT STEPS"}</text>')
+    b.append(f'<text x="26" y="78" font-size="12" fill="{DIM}" letter-spacing="2">{"TAUGHT STEPS" if mode.startswith("TEACH") else "LEARNED ORDER"}</text>')
     rows = list(steps) + ([(pending, None)] if pending else [])
     for i, (o, bn) in enumerate(rows):
         y = 102 + i * 24

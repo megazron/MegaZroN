@@ -253,8 +253,11 @@ def test_size():
     files = [f for d in ("arm", "battle") for f in (ROOT / d).rglob("*") if f.is_file()]
     size = sum(f.stat().st_size for f in files)
     check(size < 5 * 1024 * 1024, f"generated games are {size/1e6:.1f} MB, over the 5 MB budget")
-    big = max((f for f in files if f.suffix == ".svg"), key=lambda f: f.stat().st_size)
-    check(big.stat().st_size < 16 * 1024, f"{big} is {big.stat().st_size} bytes")
+    big = max((f for f in files if f.suffix == ".svg" and f.name != "card.svg"), key=lambda f: f.stat().st_size)
+    check(big.stat().st_size < 12 * 1024, f"{big} is {big.stat().st_size} bytes")            # state pages stay tiny
+    for d in ("arm", "battle"):
+        card = ROOT / d / "card.svg"                                                        # the two README cards embed a font
+        check(card.stat().st_size < 24 * 1024, f"{card} is {card.stat().st_size} bytes")
     for f in files:
         if f.suffix == ".svg":
             check("<script" not in f.read_text(encoding="utf-8"), f"{f}: script in SVG")

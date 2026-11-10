@@ -1,6 +1,6 @@
 """Plays both README games on github.com like a visitor would: real clicks, real pages.
 
-Run:  python tests/play_github.py <start url> <screenshot dir>
+Run:  python tests/play_github.py <start url> <screenshot dir> [battle]     (battle: skip the arm game)
       start url is the repo page that shows the README, for example
       https://github.com/megazron/MegaZroN  or  .../tree/<branch>
 """
@@ -107,19 +107,20 @@ with sync_playwright() as p:
     print("shot readme-play; all README images loaded")
 
     # Teach the arm
-    click("Pick red"); animating("pick"); shot("arm-1-start-pick")
-    click("Place in bin B"); click("Pick blue"); animating("mid teach"); shot("arm-2-mid-teach")
-    click("Place in bin A"); click("Pick yellow"); click("Place in bin C"); shot("arm-3-taught")
-    click("Teach done: let the robot do it")
-    assert pg.url.endswith("arm/run-rB-bA-yC.md"), pg.url
-    animating("robot repeat"); pg.wait_for_timeout(2500); shot("arm-4-repeat")
-    click("Shuffle")
-    assert pg.url.endswith("run-rB-bA-yC-s1.md"), pg.url
-    animating("shuffle"); pg.wait_for_timeout(3000); shot("arm-5-shuffle")
-    click("Shuffle")
-    assert pg.url.endswith("-s2.md"), pg.url
-    click("Teach again")
-    assert pg.url.endswith("arm/README.md"), pg.url
+    if "battle" not in sys.argv[3:]:
+        click("Pick red"); animating("pick"); shot("arm-1-start-pick")
+        click("Place in bin B"); click("Pick blue"); animating("mid teach"); shot("arm-2-mid-teach")
+        click("Place in bin A"); click("Pick yellow"); click("Place in bin C"); shot("arm-3-taught")
+        click("Teach done: let the robot do it")
+        assert pg.url.endswith("arm/run-rB-bA-yC.md"), pg.url
+        animating("robot repeat"); pg.wait_for_timeout(2500); shot("arm-4-repeat")
+        click("Shuffle")
+        assert pg.url.endswith("run-rB-bA-yC-s1.md"), pg.url
+        animating("shuffle"); pg.wait_for_timeout(3000); shot("arm-5-shuffle")
+        click("Shuffle")
+        assert pg.url.endswith("-s2.md"), pg.url
+        click("Teach again")
+        assert pg.url.endswith("arm/README.md"), pg.url
 
     # Robot battle
     names = {"A": "Attack", "S": "Shield", "C": "Charge", "O": "Overdrive"}
