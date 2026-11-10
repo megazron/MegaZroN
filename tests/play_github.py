@@ -50,6 +50,11 @@ with sync_playwright() as p:
                         raise
                     print("  (retry:", str(e).splitlines()[0][:70] + ")")
                     pg.wait_for_timeout(1500)
+                    if pg.locator(BODY).count() == 0:               # GitHub's "too many requests" or error page: back off, then reload
+                        print("  (github.com is throttling, waiting a minute)")
+                        pg.wait_for_timeout(60000)
+                        pg.reload()
+                        pg.wait_for_timeout(3000)
         return run
 
     @steady
@@ -64,7 +69,7 @@ with sync_playwright() as p:
         a = pg.locator(f'{BODY} a:has(img[alt="{alt}"])').first
         href = a.get_attribute("href")
         a.scroll_into_view_if_needed()
-        pg.wait_for_timeout(1200)                                   # be polite to github.com
+        pg.wait_for_timeout(2500)                                   # be polite to github.com
         a.click()
         pg.wait_for_url("**" + href, timeout=45000)                 # GitHub swaps pages in place, so wait for the new address
         try:
