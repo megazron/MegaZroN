@@ -7,7 +7,7 @@ WORDS=("TEXT·TO·ROBOT  ROBOT·STUDIO  zronOS  ROBOT·CHALAO  BEYOND·SAGITTARI
  "AGENT·NET  GeoTRACE  VLA  ROS·2  MuJoCo  ISAAC·LAB  KINOVA·GEN3  TELEOPERATION  DEEP·RL  LiDAR  SATELLITES  MARK·43  ")
 rgb=Image.open(SRC).convert("RGB")
 w,h=rgb.size
-box=(int(w*0.10),0,int(w*0.90),int(h*0.98))
+box=(int(w*0.16),int(h*0.02),int(w*0.84),int(h*0.86))
 rgb=rgb.crop(box); im=rgb.convert("L")
 import cv2
 g=np.asarray(im)
@@ -22,7 +22,7 @@ gx=cv2.Sobel(hi,cv2.CV_32F,1,0,ksize=3); gy=cv2.Sobel(hi,cv2.CV_32F,0,1,ksize=3)
 edge=np.hypot(gx,gy); edge=cv2.GaussianBlur(edge,(0,0),2.0)
 edge=np.asarray(Image.fromarray(edge).resize((COLS,rows),Image.BOX),dtype=float)
 edge=np.clip(edge/np.quantile(edge,0.97),0,1)
-a=np.clip(a-0.22*edge,0,1)
+a=np.clip(a-0.34*edge,0,1)
 # background: the grey studio wall ~ uniform; mark as bg where close to its level near edges
 hsv=np.asarray(rgb.convert("HSV").resize((COLS,rows),Image.LANCZOS),dtype=float)/255
 v0=np.asarray(rgb.convert("L").resize((COLS,rows),Image.LANCZOS),dtype=float)/255

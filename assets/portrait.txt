@@ -1,56 +1,56 @@
-                                     tTEXT·TO·;ex: :;;
-   [=][=]-(o)-[=][=]          :tROBOT  ROBOT·STUDIO  zr·:                     .-.
-          /|\              :;onOS  ROBOT·CHALAO  BEYOND·SAGI:               -[|o|]-
-                    TTARIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LOt:             '-'
-                 :oNDON  ISRO·NARL  IIT·BOMB:·Ar;ob;;otY  SMART·INDIA
-                · HACKATHON·WINNER·2023  SMART·IrNDIA·HA;oCKATHON·WINN;
-               EbR·2024  CANSAT·2022·WINNER  6·PATENTS  EEG·WotHEELCHAIR
-              ·  COAXIAL·DRONE  DEBRIS·HUNTER  COAX·EYE  MIND·DRIVE  TWIN
-             s·ARMS  SAC·PILOT  AGENT·NET  GeoTRACE  VLA  ROS·2  MuJoCo
-           ISAAC·LAB  KINOVA·GEN3  TELEOPERATION  DEEP·RL  LiDAR  SATELLIT
-           ES  MARK·43  TEXT·TO·ROBOT  ROBOT·STUDIO  zronOS  ROBOT·CHALAO :
-           BEYOND·SAGITTARIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  ISRO
-         ·NARL  IIT·BOMBAY  SMART·tudIiNo ::;; zroDIA·HACKATHON·WINNER·2023
-          SMART·INDIA·HACKATHON·:···········  ······:nWINNER·2024  CANSAT·202
-         2·WINNER  6·PATENTS  :···                 ····:EEG·WHEELCHAIR  COAX
-         IAL·DRONE  DEBRIS·H:····                  ······oUNTER  COAX·EYE  M
-         IND·DRIVE  TWIN·AR:·····                    ····:;MS  SAC·PILOT  AG
-          ENT·NET  GeoTRAC:·····                     ·····;E  VLA  ROS·2  Mu
-           JoCo  ISAAC·LAs:····                       ·····;B  KINOVA·GEN3     _[]_
-              TELEOPERATIO:··                ······::::::····N  DEEP·RL  Li  _|____|_
-               DAR  SATELL··::;:::::·········:;;;;:······;:::·ITES  MARK·4  (o)----(o)
-                3  TEXT·TO: :::··::·::;:···; :::;;········r:·:o·ROBOT  ROb
-                 BOT·STUD:::······:Iot·c···:Oh  azronOS l::···· ROBOT·CHA
-                  LAO  BE:··:;YOND·S;aA;·  ·o:·:··:::······ ···:GITTARIU
-        ,^,        S  HUA ··::::··:······   ···         ··· ····WEI·R&D·
-       |CAN|        UK  I ··        ····     ····      ··  ·····MPbeERI
-       |SAT|         AL·Cy····     ····       ··           ·····OL:oLEG         __
-        \|/            E·L··         ····  ·::···         ······:::OND         [__]==o
-                      ·:ON···        :  IndSRO·N·        ·······:·:A·             \\
-                       · R:···       ····::···          ········;· ·               \\__
-                          L·····            ··     ·   ········: ;s             ___|__|___
-                          :a·····   ···:::;gitt;::············:a II
-                           ;;········:T·:·······::···········:rBOMB
-                            :;······························:;AY
-                            · i········:; SMAu:···········:;s RT
-                               ·::··········    ········:; h;:IN
-                                Du::···         ·····:;awei;::IA
-                              · ·HA;;:············:;·Cr&d;:::KAT ·
-                             ··HON·WINNE·u;;k  imR·2per;;;i023  S
-                          ·· aMAlRT·INDIA··college·;lonHACKATHOdN·W
-                     ···   INNon  ER·2024  CANisSAT·2022·WINNroER·  6n
-                ··    :·PAarl;  iit·TENTS  EEG·WHEELCHAIR bom COA;bayXIA
-           ··     L·  sma;;;;;;;Drt·inRONE  DEBRIS·HUNTdia·ERh a ;;;ckatCOAXh
-            :o·En·wi;;;::;;::::;YnnerE  MIND·DRIVE  T·20WIN·A23  ;;;;smart·indiRM;
-      ;aS ·hack;;::;;;:;:::::::; SatAC·PILOT  AGENT·NET  Ghon·eoT;:;;;;;winn;;;;er·2RA0:
-2CE  4V  c;;;:::::;;;:::::::::;aLA nsat ROS·2  MuJoCo  ·20ISAAC·2;:;;;;2·winn;;::;:;er  6LAB
- ·pat;;;;;;;:::::;;;;:::::::;e;: KnINOVA·GEN3  TELEOPERATIONts  ee;;;;;g·;;;wh;;::;;;;;;;eel
-c;;;;;;;;::::::::h a::::::;;:::: Dir  coaxiaEEP·RL  Ll·drone  deb::;;;;;;;;;;ri;::::::;;;;;;
-;;;;;;::::::::::;;siDA·:::::::::R hunter  coax·eye  mind·drive  t:::;;;;;;;;;w S;;;::;;;;;;;
-;;;;;::::::::;;:::::;in;::::::::AT·arms  sac·pilot  agent·net  ge::;:::;;;oELLIt;;;;:;:;;;;;
-;;;;::;;;:::::::;r;;::::::::::::TE;;ace  vla  ros·2  m;ujoco  isa:::::::::aSc·;;;;;;;;;;;;;:
-;;;;;;;;;;:::;la;:::::::::::::::  ;;b ; kin;;;;;o;;;;;va·gen3  te::::;:;;;;:;;l;;;;;;;;;;;;:
-e;;;;;;;;;;::;oM;:::::::::::::::ARperation ;;;;;;;;;;; deep·rl  K::;::;;;;:;::;;;l;;;;;:;;;;
-i;;;;;;;;;;;;;;·;;::::::::::::::43dar  sate;;ll;;:;ites  mar;k·4 :::;:;;;;;::::;;3 ;;;;;;;;;
- ;;;;;;; t;;:;;T;;::::::::::::::EXext·to;;·rob;;;;;ot  robo;;t·st::;;;;;;;:::;;::Tu;d;;;io
-zr;;;;o;no;;;;;·s:::::::::::::::TO  rob;;;;ot·c;;;;;;halao  ;be·y:;;;;;:::::::;:;R;;;;;;ond·
+                           ;TEXT·TO·RtOBexOT  ROtBOT·STUDI;
+                         ;O  zronOS·to  ROBOT·C·rHALAoO  BEYON;               .-.
+                D·SAGITTARboIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·L:         -[|o|]-
+              ONDON  ISRO·NARL  IIT·BOMBAY  :SMAtRT·INDIA·HACKATHON·WINN      '-'
+           ER·2023  SMART·INDIA·HACKATHON·WINNER;·202;4  CANSAT·2022·WINNE
+          R  6·PATENTS  EEG·WHEELCHAIR  COAXIAL·DRONE  DEBRIS·HUNTER  COAX·E
+         YE  MIND·DRIVE  TWIN·ARMS  SACr·PILOT  AGoENT·NET  GeoTbRACE  VLA  R
+        oOS·2  Mtu·JoCo  ISAAC·LAB  KINOVA·GEN3  TsELEOtPERATION  DEEP·RL  Liu
+       DAR  dio  zrSATELLITES  MARK·43o  TEXT·TOn·RoOBsOT  ROBOT·STUDIO  zronO
+    S  ROB  OT·CHALAO  BEYOND·SAGITTARIUS rob HUot·cAWEI·R&D·UK  IMPERIAL·COLLh
+    aEGE·laLoONDON  ISRO·NARL  I  beIT·yonBd·OMBAsagY  SMART·INDIA·HACKATHON·WI
+    NNER·2itt023  SMART·IaNDriIus  hAuaw·HACeKATi·r&d·Huk ON·WINNER·2024  CANSAT
+   ·2 022i·mperiWINNER  6·PAaTENl·coTS  EEG·WHEElleLCHAIR  COAXIAL·DRONE  DEBRIS·
+  HUNTERge·lo  COAX·EYE  MIND·DRn;;IVdEo;;::::;;;;;n  TWIN·ARMS  SAC·PILOT  AGENT·
+  NET   isro GeoTRACE  VLA  R;:::::·················::;·OS·2 nar MuJoCo  ISAAC·LAB
+    KIl  iiNOVA·GEN3  TELEOt:····                 ·····::;P·ERATION  DEEP·RL  LbiD
+  AR  ombaySATELLITES  MA :····                   ·······:: smart·inRK·43  TEdXT·T
+   O·ROia·haBOT c ROBOT·::·····                   ·········:;STUDIkO a zronOthoS
+    ROBn·winner·20OT·CH::·····                      · ·····::2ALAO  BEYOND·SAG3IT
+    TAR  smart·IinUS  d:·····                          ·····:HUAWEI·R&D·UK  Iia·MP
+     ERIAhacL·CkatOLLho:···                            ······:EGE·n·LOwinneNDOrN
+         ISR·2O·0NAR2L ···                   ·::::::;4 ;;;::···: I IT·BcansOMBAY
+           SatM·2022·A;··:;w;:::::::··  ····::iRnne;:::::::rT;:::·IND  6·patIA·
+          HACentKAs TH: ON;eeg·w:::·h::::::e:::::::·········WIe;lNNERch·air2023
+        ,^,     cSMART:o::·· ···::::;·;:··:Ia;xNDIA·HACKA;::T:···:HONi·al·dWIN
+       |CAN| NEroR·202:::·::n4  CANSAT·:  ·e2022 :·WIN Nd;;:;· ··:;ER e 6·PAT
+       |SAT|  ENbrTS  ::::EEG·WHEE;;;L:·   ·C:··:::::::··  ::  ···:HAIRi  sCO   __
+        \|/   AX·hIAL·;··::::::::::·:;··    ·::·          ·:   ···:DROunNE     [__]==o
+               DEBRIS·;:·  ·      ··::·     ··::···········   ····:HU;teNTER      \\
+                  COAX:::·············      ···:··            ····:r·;;EYE         \\__
+                   MIN:··· ······· ····   ··::···     ··    ······::D:;·DR      ___|__|___
+                   IVE:······      ::  T:::WIN·       ·· ········:::A;RMS
+                      ;:·····      : SAcoaCx::;;·    ············:::;·:·
+                      P:·······     ·····:··        ············:::I:··:
+                       ;:······      ················· ·········:::LOT
+                       ·:::····· ····:;;;e yAeGE;:::···········::: NT·
+                       :N:::·······:ET   ;;:::::mG;:··········:::;eoTRA
+                         C::·······:;::······:::·············:::;E
+                          V;::·······:;;iLA  RO:::·········:::;;nS·2
+                            d::::····:::;;;;:::···········:::;;;· M
+                            uJ;::::·····           ····:::;;;;;:;oC
+                             o ;:::···     ··········::;d;;;;;::r IS
+                             AACi;;;::::········:::;·LAv;;;;:::eB;
+                             KINOV  tA·wGi;;;;n·arENms;;;;;:;3    sTE
+                           LEac·pilOPEoRt  ATage;;;;;;;;ntION  ·ne;;DEE
+                     ·   P·t;;;  geoRL  Ltr;;;;;;;;;aciDARe  SA ;; v;lTEL
+                      LITa;;;;;;;  rEos·S  MARK·43  2 TEXT·T m;;;u;j;;;;oO·
+                cROBo ;;;;;;;; ;;;isaaOT  cROBOT·STUDIO  z·l;;;;ab  ;;;;;;kroni
+           nOS o;;;;;;;:::;;:;v;;;;;a·gen ROBOT·CHALAO3  ;;;teleopera:;;;;;;;tio  Bn
+      EYON ;;;;;;;;:::;::::::;D;;;; deep·rl  lidar  sat;;ellites  ma;:;;;;;;;;;;;;;;;r·Sk
+AGIT·43 ;;;;:::;;;:::::::::::; ;;;text·to·robot  robot·studi;;;;o  Tz:;;;;;;;;;;;;;;;;;;;;rA
+o;;;;;;;;:::::;::::::::::::::nRos;;  robotIUS ·chal HUAao;;;;; WEI b;::;;;;;;;;;;;;:::::::;;
+;;;;;;;::::::;;;::::::::::;e;;·yonR&d·sagittarius  huawei·D·UK r&;;d;:;;;;;;;;;;;;;;::::::::
+;;:;;:;:::::;;:::::::::::;;::; ;;;·uk  IMPimERIAL·COLLEGEpe;;;;;;;;r;;;;;;;;;;;;;;;;;:::::::
+;:::::::::::i·L;;::::::::::::;Oa;;;;;;;;;;;;;;;l;;;;;;;;;;;;;;;;;;;·;::;;;;;;;;;;;;;;;::::::
+::::::::::::::;NDO;:::::::::::N;;;;;;c;;;;;;;;;;;;;;;;;;;;;;;;;;;;;o;:::;;;;;;;;;;;;  ;:::::
