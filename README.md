@@ -2,7 +2,7 @@
 <p align="center">I build robots that see, think and move.</p>
 
 ```text
-                                 ·;    NAH·I'D·WIN               z
+                                 ·;    NAH·I'D·WIN
    [=][=]-(o)-[=][=]       :FELICITATED·BY·ISRO·CHAIRMAN ·:                   .-.
           /|\          ·;CANSAT·GRAND·FINALIST·2024 KINOVA·GEN3             -[|o|]-
                QISKIT·QUANTUM·EXCELLENCE SIH·PORT·SECURITY·1·LAKH ·;          '-'
@@ -16,7 +16,7 @@
    STICKERSOUNDS ROBOT·CHALAO MSc·ROBOTICS IEEE·InGARSS SCENEBREAKER LET·HIM·COOK
   AURA·FARMING IJSRST·2024 LiDAR;;;;;;·;:::::::::::;UNITREE·GO2 HUAWEI·R&D DEEP·RL
   ISPRS·2025 FUSION·360 JULIA::··········       ·····::;;TWIN·TRUTH ISRO·NARL C++
-  6·PATENTS TWIN·ARMS OCTO;:···:::,,......    ...,,:::;-=+#@SAC·PILOT AGENT·NET ··
+  6·PATENTS TWIN·ARMS OCTO;:···:::,,......   z...,,:::;-=+#@SAC·PILOT AGENT·NET ··
    ISAAC·LAB GDSC·LEAD ·;:···;;:::,,,........ ...,,,::::;;=*%@ICCC·2025 GeoTRACE
    REPOLENS MARK·43 VLA;:··--;;:::,,..          ...,,,:::;-+*%@@IEEE·YP SmolVLA ·
     OpenVLA PYTORCH ACT:·----;;::,,.             ..,,,,:;;--+%@@@@AYRPORT HBR·REP

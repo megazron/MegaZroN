@@ -179,8 +179,8 @@ m = re.search(r"[A-Za-z0-9][^ ;:]*[A-Za-z0-9]", lines[0])
 t = "NAH·I'D·WIN"; c0 = m.start() + (len(m.group()) - len(t)) // 2
 lines[0] = (lines[0][:m.start()] + " " * len(m.group()) + lines[0][m.end():])
 lines[0] = lines[0][:c0] + t + lines[0][c0 + len(t):]
-# and one lone z, somewhere on the wall
-import random; rnd = random.Random(43)
-spots = [(r, c) for r in range(rows) for c in range(2, COLS - 2) if mask[r, c] and lines[r][c - 2:c + 3].strip() == ""]
-zr, zc = rnd.choice(spots); lines[zr] = lines[zr][:zc] + "z" + lines[zr][zc + 1:]
+# and one lone z, hidden in the middle of my forehead
+cr, cc0 = int(rows * 0.30), COLS // 2
+spots = [(r, c) for r in range(rows) for c in range(2, COLS - 2) if lines[r][c] == " " and lines[r][c - 1] in " .," and lines[r][c + 1] in " .,"]
+zr, zc = min(spots, key=lambda p: (p[0] - cr) ** 2 * 4 + (p[1] - cc0) ** 2); lines[zr] = lines[zr][:zc] + "z" + lines[zr][zc + 1:]
 open(sys.argv[3], "w").write("\n".join(l.rstrip() for l in lines) + "\n")
