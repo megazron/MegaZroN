@@ -1,28 +1,28 @@
-                                 ·;GOOGLE·DEVFEST·AWARD
-   [=][=]-(o)-[=][=]       :SIH·2024·PORT·SECURITY·1·LAKH :                   .-.
-          /|\          ·;SMART·INDIA·HACKATHON·WINNER·2023 OCTO             -[|o|]-
-               SMART·INDIA·HACKATHON·WINNER·2024 BEYOND·SAGITTARIUS;          '-'
-           :;FELICITATED·BY·ISRO·CHAIRMAN ··;VLA:ACT ;INDIAN·PATENT·540791
-          CANSAT·GRAND·FINALIST·2024 IIT·BOMBAY·RESEARCH·AWARD TEXT·TO·ROBOT
-         QISKIT·QUANTUM·EXCELLENCE SIH·THREE·YEARS·IN·A·ROW MICROSOFT·Q#·BLOG
-        QUANTUM·HACKATHON·TOP·16 GOOGLE·FOR·DEVELOPERS·AD CANSAT·2022·WINNER ·
-       IMPERIAL·COLLEGE·LONDON SIH·2023·TRAFFIC·1·LAKH 2·SOUTH·AFRICAN·PATENTS
-    INDIA·SCIENCE·FESTIVAL IASc·INSA·NASI·FELLOW GOOGLE·I/O·CONNECT KINOVA·GEN3
-    IDE·BOOTCAMP·TOP·5 GLOBAL·TALENT·VISA GDSC·800+·MEMBERS 3·GERMAN·PATENTS C++
-   DIFFUSION·POLICY BRAIN·TUMOR·YOLO EEG·WHEELCHAIR URSC·BENGALURU PHONE·TO·ROBOT
-  HUAWEI·R&D·UK COAXIAL·DRONE ··;;;;;;·;:::::::::::;DEBRIS·HUNTER STAR·AVIONICS ··
-  HYPERSPECTRAL STICKERSOUNDS::··········       ·····::;;ROBOT·STUDIO ROBOT·CHALAO
-  MSc·ROBOTICS IJSRST·2024;:···                     ...:-~+*&IEEE·InGARSS GeoTRACE
-   SCENEBREAKER REPOLENS;:···                          ..,-+*&*&UNITREE·GO2 ROS·2
-   IIT·BOMBAY ISRO·NARL;:··..                            .,-=@@@@ISPRS·2025 LiDAR
-    FUSION·360 DEEP·RL :·.                                .:~@@@&@@TWIN·TRUTH OCTO
-      6·PATENTS MARK·43:,.                         .,;;;,,,.,;=@@@*&TWIN·ARMS VLA
-         SAC·PILOT ACT ;,,:,::::;;,         .-+&@@@@@@@***=+-..;&@@&@AGENT·NET
-          ISAAC·LAB ··==&@@@@@@@@@**=:,,--~~=~~===~:  ..,,:~@@@**@@&&&GDSC·LEAD
-            ICCC·2025@+*=-:,.,:-~~==+@@~~~=@*+*@@@@@@@@**+=~@~. ;*@@@&&IEEE·YP
-             SmolVLA @~=---=@@@@@@@@@@@;   *@@@@@=@@@@***+=~*.  ,-+@@@&zronOS
-              OpenVLA@--~+@@@*&@@@+==@~.   .*+,.,::;;:,    --   .:~@@@@&JULIA
-        ,^,    ROS·2@@*: BISMILLAH :=+,      ~=; TAWAKKUL :,    .:-@@***C++
+                                 ·;GOOGLE·DEVFEST·AWARD            z
+   [=][=]-(o)-[=][=]       :FELICITATED·BY·ISRO·CHAIRMAN ·:                   .-.
+          /|\          ·;CANSAT·GRAND·FINALIST·2024 KINOVA·GEN3             -[|o|]-
+               QISKIT·QUANTUM·EXCELLENCE SIH·PORT·SECURITY·1·LAKH ·;          '-'
+           :;SIH·THREE·YEARS·IN·A·ROW zronOS;VLA:OCTO;BEYOND·SAGITTARIUS ·
+          QUANTUM·HACKATHON·TOP·16 GOOGLE·FOR·DEVELOPERS·AD DIFFUSION·POLICY
+         IMPERIAL·COLLEGE·LONDON IASc·INSA·NASI·FELLOW CANSAT·2022·WINNER ACT
+        GOOGLE·I/O·CONNECT SIH·TRAFFIC·1·LAKH IDE·BOOTCAMP·TOP·5 TEXT·TO·ROBOT
+       GLOBAL·TALENT·VISA MICROSOFT·Q#·BLOG GDSC·800+·MEMBERS BRAIN·TUMOR·YOLO
+    SIH·WINNER·2023 SIH·WINNER·2024 BUILT·DIFFERENT EEG·WHEELCHAIR ROBOT·STUDIO
+    PHONE·TO·ROBOT COAXIAL·DRONE DEBRIS·HUNTER STAR·AVIONICS HYPERSPECTRAL ROS·2
+   STICKERSOUNDS ROBOT·CHALAO MSc·ROBOTICS IEEE·InGARSS SCENEBREAKER LET·HIM·COOK
+  AURA·FARMING IJSRST·2024 LiDAR;;;;;;·;:::::::::::;UNITREE·GO2 HUAWEI·R&D DEEP·RL
+  ISPRS·2025 FUSION·360 JULIA::··········       ·····::;;TWIN·TRUTH ISRO·NARL C++
+  6·PATENTS TWIN·ARMS OCTO;:···                     ...:-~+*&SAC·PILOT AGENT·NET ·
+   ISAAC·LAB GDSC·LEAD ·;:···                          ..,-+*&*&ICCC·2025 MARK·43
+   GeoTRACE REPOLENS ··;:··..                            .,-=@@@@IEEE·YP SmolVLA
+    OpenVLA PYTORCH VLA:·.                                .:~@@@&@@AYRPORT HBR·REP
+      MuJoCo QISKIT ACT:,.                         .,;;;,,,.,;=@@@*&LIBERO JETSON
+         NO·CAP GOATED ;,,:,::::;;,         .-+&@@@@@@@***=+-..;&@@&@HUAWEI·R&D
+          ROBOT·STUDIO==&@@@@@@@@@**=:,,--~~=~~===~:  ..,,:~@@@**@@&&&ISRO·NARL
+            6·PATENTS@+*=-:,.,:-~~==+@@~~~=@*+*@@@@@@@@**+=~@~. ;*@@@&&DEEP·RL
+             GeoTRACE@~=---=@@@@@@@@@@@;   *@@@@@=@@@@***+=~*.  ,-+@@@&zronOS
+              MARK·43@--~+@@@*&@@@+==@~.   .*+,.,::;;:,    --   .:~@@@@&ROS·2
+        ,^,    LiDAR@@*: BISMILLAH :=+,      ~=; TAWAKKUL :,    .:-@@***C++
        |CAN|    OCTO RABBI·ZIDNI·ILMA         :- LA·TAHZAN     .,;-@@++@VLA
        |SAT|      ACT@-,. .::::::  .,,.    ,;;,;;             ..:;-=@=+@··      __
         \|/        ··@~;,.         -=@@*=~+@@@@*+           ...,:--=@+@··      [__]==o
@@ -34,15 +34,15 @@
                           ·@~-;;:,,.:~+*@@@@@@*=~-:,,,,,:;;-~=++*VLA
                             ·;~~-;;:::;;--;:.  . ..,,.,:;-~=+++;;··
                              ··:==-;,              ..,-=+++*;;::;··
-                             ····;;:~;;:,.,,,:,::-~=+*&&·;;;::::····
-                             SPIDER-MAN;·;;;;;;;MARVEL;;;;;:;DR·STONE
-                           ··TOMB·RAIDER·KING ;·;;;;;;;;TONY·STARK;····
-                        INDIA;;;DRAGON·BALL·Z ··;SOLO·LEVELING ·;;;·;JNEC
-                  MAHARASHTRA;;;;;NIGHTWING SWIMMING SKATING;;;;··;·;NAMASKAR
-             AURANGABAD:::··:;·;;;;;SINGING ESPORTS ANIME;;;;GAMING ;:HOUSE·CAPTAIN
-      QUIZ·CHAMPION::::::::::;·;;;;TOMB·RAIDER·KING ···;;NIGHTWING;·;:ASSALAMU·ALAIKUM ·
-B·TECH·ECT :::::·::::::::::::;·;;;;DRAGON·BALL·Z SPIDER-MAN ;;;;····;:MAHARASHTRA :NAMASKAR
-INDIA ·:::::::·:::::::::::::·SOLO·LEVELING TONY·STARK ··;;;DR·STONE ;::AURANGABAD ·:::::::··
-··:··:·::::::··:::::::::::··:;··;SWIMMING SKATING SINGING ····;;;;;·;BALBHIM·COLLEGE :::::::
-·:::::::::::JNEC:::::::::::::;··;;;;;;;;;;;;ESPORTS ·;;;;;;;;;;;;;;·;::INDIA ·:JNEC ··::::::
-:::::::::::::INDIA :::::::::::·;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;·;:::MGM·UNIVERSITY::::::
+                             MOGGED:~;;:,.,,,:,::-~=+*&&RIZZ::::SLAY
+                             I·AM·THE·HOPE·OF·THE·UNIVERSE :MIC·CHECK
+                           ··PROOF·THAT·TONY·STARK·HAS·A·HEART DELULU ·
+                        ·····[SYSTEM]·YOU·HAVE·LEVELED·UP NAH·I'D·WIN ····
+                  STAY·HUMBLE WITH·THIS·TREASURE·I·SUMMON BLACK·FLASH ·······
+             ·······ONG:::··:I·ALONE·AM·THE·HONORED·ONE INFINITE·VOID:RIZZ ········
+      HOUSE·CAPTAIN::::::::::STAND·PROUD·YOU'RE·STRONG IT'S·OVER·9000:SLAY QUIZ·CHAMPION
+MUM·AND·DAD:::::·::::::::::::ANYONE·CAN·WEAR·THE·MASK ...GOOD·FOR·YOU:ONG ········:·········
+·······:::::::·:::::::::::::GENIUS·BILLIONAIRE·PLAYBOY·PHILANTHROPIST::ONG ········:::::::··
+··:··:·::::::··:::::::::::··:WITH·GREAT·POWER·COMES·GREAT·RESPONSIBILITY ·B·TECH·ECT :::::::
+·:::::::::::····:::::::::::::MAIN·CHARACTER·ENERGY ZERO·CURSED·ENERGY::ONG ···:·······::::::
+:::::::::::::······:::::::::::HEAVENLY·RESTRICTION KINGDOM·OF·SCIENCE:::··FAMILY·FIRST::::::
