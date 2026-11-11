@@ -2,78 +2,64 @@
 <p align="center">I build robots that see, think and move.</p>
 
 ```text
-                                                tTEXT·TO·Re::::    :
-   [=][=]-(o)-[=][=]                    :xOBOt·T  ROBOT·STUDIO  zronOS;                                 .-.
-          /|\                        :t  ROBOT·CHALAO  BEYOND·SAGITTARIUS                             -[|o|]-
-                             o·;;;roHUbAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  o                          '-'
-                          ISRO·NARL  IIT·BOMBAY  SMART·tINDIA·HACKATHON·WINNER·202:
-                        3  SMART·INDIA·HACKATHON·WINNER·:: 2 :024ro;  CANSAT·2022·WINNER
-                    ; bo 6t·PATENTS  EEG·WH·sEELCHAIR  COtAXI:uAdi;:;;o  zL·DRONE  DEBRIS·
-  ~~+~~   ~~+~~    HUNr;TER  COAX·EYE  MIND·DRIVE  TWIN·ARMS  SAC·PILOT on AGENT·NET  GeoTRA
-      \___/        CosE;  VLA  ROS·2  MuJoCo  ISAAC·LAB  KINOVA·GEN3  TELEOPER : ATION  DEEP·
-      [o_o]       rRL  LiDAR  SATELLITES  MARK·43  TEXT·TO·ROBOT  ROBOT·STUDIOo b ozronOS  RO       ~~+~~   ~~+~~
-      /   \      BOT·CHALAO  BEYOND·SAGITTARIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  ISRO:          \___/
-  ~~+~~   ~~+~~ ;t·NARL  IIT·BOMBAY  SMART·INDIA·HACKATHON·WINNER·2023  SMART·INDIA·HACKATHON·          [o_o]
-              WINNER·2024  CANSAT·2022·WINNER  6·PATENTS  EEG·WHEELCHAIR  COAXIAL·DRONE  DEBRIS         /   \
-              ·HUNTER  COAX·EYE  MIND·DRIVE  TWIN·ARMS  SAC·PILOT  AGENT·NET  GeoTRACE  V·LA  R     ~~+~~   ~~+~~
-             OS·2  MuJoCo  ISAAC·LAB  KINOVA·GEN3 c TELEOPERAThIaON  DEEP·RL  LiDAR  SATELLITES
-           ; MARK·43  TEXT·TO·ROBOT  ROBOT·STUDIO  zronlOS  ROBOT·CHALAO  BEYOND·SAGITTARIUS  HUA
-           WEI·R&Da·UK  IMPERIAL·COLLEGE·LOo:::;;: :::·····:::::: NDON  bISRO·NARL  IIT·BOMBAY  SM
-           eART·INDIA·HACKATHON·WINNER·2y:············        ·····:;o023  SMART·INDIA·HACKATHON·W
-           INNER·2024  CANSAT·2022·WINN:·····                    ·····:nER  6·PATENTS  EEG·WHEELCH       _[]_
-           AIR  COAXIAL·DRONE  DEBRIS:····                        ······:d·HUNTER  COAX·EYE  MIND·     _|____|_
-            DRIVE  TWIN·ARMS  SAC·P;······                        ·······:·sILOT  AGENT·NET  GeoTR    (o)----(o)
-            ACE  VLA  ROS·2  MuJoC;·······                           ·····:ao  ISAAC·LAB  KINOVA·
-             GEN3  TELEOPERATION g·······                           ······: DEEP·RL  LiDAR  SATELL
-              ITES  MARK·43  TEXT;······                             ······:·TO·ROBOT  ROBOT·STUDI
-        ,^,     O  zronOS  ROBOT·;····                          ·············iCHALAO  BEYOND·SAGI
-       |CAN|      TTARIUS  HUAWEI;·····     ···         ···::;tt·R&D·a;ri:····:UK  IMPERIAL·COL;
-       |SAT|       LEGE·LONDON  I:··:usS;::;::············::::;;:········: ::;··RO·NARL  IIT·BO           __
-        \|/         MBAY  SMART·I: h:::::::::·::;::····:;::··::···········:N::::DIA·HACKATHON·           [__]==o
-                      WINNER·202u:;···········:::3a····· ;;w SMART·INDIe::;:····:A·HACKATHON·i              \\
-                       WINNER·20:·:····::·24  CANSA:·  ·rT·20&·;22·W;d·;;::· ····;INNER  6·PA                \\__
-                        TENTS  E;···:uEG·;WHEE:::k:·    ·L·······::····· ···  ···:CHAIR  COAX             ___|__|___
-                        IAL·DRONE···::::·········:··     ·:·            ···  ·····  DEBRIS·H
-                         UNTER  C:···········  ····      ·····         ··    ·····OA  iX·EYm
-                          E  MINp····         ····       ······             ······D·;:;DRIV
-                            E  TW·············  ··       ·  ··              ······:I:·N·AR
-                             MS  ···           ······ ···;e:··            ·········r·:SAC
-                              ·PI····          ·:LOT :: AGENT:           ··········:··NE
-                                T;····         ·i a::l·c·····           ··········:···:
-                               ·  :·····          ······               ···········o····
-                                  l·······         ·   ·····    ···   ···········:GeoT
-                                 ·l:······    ·····::;;;egeRA::·················:·CE
-                                  :V:···········:LA  ;;;:····:l;:··············:oROS·2
-                                     :··········;:····  · ···················::n Mud
-                                     J:············:·::::;o::···············::;oCo
-                                       :··········::;ISAAn::··············::;  C·L
-                                       Ai::··············    ···········::;sro:B
-                                        · ;::·····              ······:;narl;;:KIN
-                                         OV :::···· ·· ············:;A iit·;:::·GE
-                                       · N3  b;o::·············::mTELbay  :::;EOsP
-                                      ··ERATIONma  rtD;;·indiaEEP·R·hac;;:;L  LiDAR
-                                   ··  SATELLITES  MARK·43 k athon·winneTEXT·TO·Rr·OBO
-                                ··  T  202ROBOT·STUDIO3  ;;;;;;sma  zronOS  ROBrt·inOT·C
-                          ···    HALAdia·hacO  BEYOND·SAGITTARIUS  HUAWEI·R&Dkatho·n·wiUK
-                      ··    n IMPEner·2024  canRIAL·COLLEGE·LONDON  ISRO·Nsat·AR20L2;2·wi  II
-                  ·    T·Bnner ;;;;;;;;;;O 6·patMBAY  SMART·INDIA·HACKAents T eHOeNg;;;·wheel·WINN
-                  cER·2hai;;;;:;;;:::;;:;02r  co3  SMART·INDIA·HACKAaxialTHON·WIN·Nd:;;;rone  debrisER·
-             h·202unt;;;:;;;;;:;;:::;:::;4 er   CANSAT·2022·WINNER  6·PATENTcSoax· e:;;;;ye  mind;;;;·dr EEi
-      vG·WHe  tw;;;;;;::;;;;::::::::::::;EEin·aLCHAIR  COAXIAL·DRONE  DEBRrms  IS·Hs::;;;;;;ac·pil;;;;;;;ot  UNTEa
-gR  COAent·;;;;;;;::::::;;:::::::::::::;nX·EYet  gE  MIND·DRIVE  TWIN·eotraARMS  ce ::;;;;;; vla;  ;;;:;;:;;;;rosSAC·P
-IL·2  muj;;;;;;;:::::::;;;;::::::::::;o;:cOo T  AGENT·NET  GeoTRAC iE  VLA  Rsaac·la::;;;;;b  ;;;;ki;;:::;:;;;;;nova·g
-en3  te;;;;:;;::::::::le;:::::::::;;;::::oOperatioS·2  MuJoCo  ISAAC·LABn  deep·rl ;;;:;;;;;;;;;;; li;;::::;;:;;;;;;d;
-ar;;;;;;;;;::::::::::;    ;::::::::::::::sKatellites  mark·4I3  text·to·robot  robo;:::;;;;;;;;;;;t·st;:::::::;;;;;;;;
-;;;;;;;;::::::::::::;;:;uNOVd;:::::::::::iAo  zronos  robot·chalao  beyond·sagittar;:::;:;;;;;;;;;;i·Gu;:;:::;;;;;;::;
-;;;;;;;::::;:::::;;:::::::;Es;::::::::::: N huawei·r&d·uk  impe3ria l·college·lond :::;;;:::;;;onTELEO ;;;;;::;;;;;;;;
-;;;;;;::;::;:::::;;:::;;;;;:::::::::::::: Pi;;;sro·narl  iit·bombay  smart·india·hE:::::::::::;aRAck;;;;;;;;;;::;;;;;;
-;;;;;:;;;;;;:::::;;;;at;:::::::::::::::::hTo;;n·w;;inner;·;;;;2;0;2;;;3;  smart·ind::::::;;::::;;;;i;;;;;;:;;;;;;;;;::
-;;;;;;::;;;;;::::;aI·::::::::::::::::::::hOa;;cka;thon·;;;;;;;w;;;i;;;nner·20;24  c;:::::::::;;;:;:;an;;;;;;;;;;;;;;;;
-s;;;;;;;;;;;;;::;;aN;;;::::::::::::::::::t ·202;;;2·winn;;;;;;;;;e;;;;r  6·patents :::;::;;;;;;:;::::;;; ;;;;;;;:;;;;;
- ;;;;;;;;;;;;;::;:;De;;::::::::::::::::::eEg·wheelchair;;;; ;;;;;; coaxial·dr;one E;:::::::;;;;;:::::;;; Pd;;;;;;;;e;;
-b;;;;;;;;;;;;;;;;;;·r;;::::::;:::::::::::iRs·hunter;;; ;; co;;;;;ax·eye  mind;·driL;:::;:;;;;;;:::::;:;;  v;;;;;;;e  t
-wi;;;;;;;;;n·;;;;;;aL;:::::::::::::::::::iDrms;  sac;·pilot ;;;;;;; agent·n;;;et  A:::;;;;;;:;:::::;;:::R ;;g;;;;eotra
-ce ;;;;; ;;v;;;;;;;l ;:::::::::::::::::::SAa  ros·;;;2 ; muj;;;;;;;;oco  isaac·laTE;:;;;;;::::::::::;;:;Lb;;;;;;  kino
+                                      :TEXT·TO·R;;t: ::;
+   [=][=]-(o)-[=][=]            ;OBOT  ROBOT·STUDIO  zronO:                       .-.
+          /|\                :S  ROBOT·eCHALAO  BEYOND·SAGITTA:                 -[|o|]-
+                     xRIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON:               '-'
+                   t  ISRO·NARL  IIT·BOMBAY  ·:tSo;M·r;AoRT·INDIA·HACKAb
+                TH;ON·WINNER·2023  SMART·INDIA·HACoKATt  HO;N·WINNER·2024:
+               ;  rCANSAT·2022·WINNER  6·PATENTS  EEG·WHEELCHAIRo  COAXIAL·:
+               DRONE  DEBRIS·HUNTER  COAX·EYE  MIND·DRIVE  TWINbot·ARMS  SAC
+              ·PILOT  AGENT·NET  GeoTRACE  VLA  ROS·2  MuJoCo  ISAAC·LAB  KI
+           N;OVA·GEN3  TELEOPERATION  DEEP·RL  LiDAR  SATELLITES  MARK·43  T·
+           EXT·TO·ROBOT  ROBOT·STUDIO  zronOS  ROBOT·CHALAO  BEYOND·SAGITTARI:
+           US  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  ISRO·NARL  IIT·BOMBAY
+         sSMART·INDIA·HACKATHON·WINNER·2023  tSMART·INDIA·HACKATHON·WINNER·2024
+           CANSudAT·2022·WINNER  6i:::::::··········::·PATEoNTS  EEG·WHEELCHAIR
+          COAXIAL·DRONE  DEBRIS·:······             ····: HUNTER  COAX·EYE  MIND
+         ·DRIVE  TWIN·ARMS  SA;···                   ·····: C·PILOT  AGENT·NET z
+           GeoTRACE  VLA  ROS:····                    ······ro·2  MuJoCo  ISAAC
+          ·LAB  KINOVA·GEN3 ·······                     ····:n TELEOPERATION  D
+           EEP·RL  LiDAR  S:·····                       ·····oATELLITES  MARK·4s   _[]_
+            3  TEXT·TO·ROBO:···                      ·········:T  ROBOT·STUDIO   _|____|_
+                zronOS  ROB:····   ···        ···::;  Or;:;:····T·CHALAO  BEYO  (o)----(o)
+                ND·SAGITTAR··:obIoUS;:·········:::::········;;;::  HUAWEI·R&D
+                 ·UK  IMPER:;:········::t:····I::;AL;:::::··:c····COLLEGE·LOh
+                  NDON  IS::·····:::ROalao· ·:·NAR;L  IIT·B: ·····OMBAY  SMA
+        ,^,        RT·INDI;··:;A·HACK :;b:·  ·;:·····:········ ···:ATHON·WI
+       |CAN|        NNER·20···::········:·    ···         ··· ····:23  SMAR
+       |SAT|         T·INDI··        ····      ····       ·   ·····Aeyo·HA          __
+        \|/           CKATH····     ·····       ··            ·····On:N·WI         [__]==o
+                        NNE··          ····  ·::···         ·······:::R·2             \\
+                       ·:02···        ·:4  d·CANSA·         ·······:·sTa               \\__
+                        · ·;···        ····::····         ·········:  ·             ___|__|___
+                           2:·····                       ·········:0::·
+                           :g······   ····:::;it;:···············:22·W
+                            ;;·········:INt:::···::::···········:aNER
+                             :r································:i 6·
+                             · u·········:;sPATE :···········:; NTS
+                                 :·························:;hu;a
+                                 Ew::····           ····::ei·r;:&EG
+                                 ·Wd;::···············:·Huk  :::EEL
+                               · CHAIimpe;:::::::::rR  Cial;::OAXIAL
+                            ··  ·DRONE  DEBRIS·HUN·college·TER  COlAX
+                        ···  ·EYEon  MIND·DRIdon;  isrVE  TWIN·Ao·naRMSr
+                   ···    l  S  iit·AC·PILOT  AGENT·NET  GeoTRbombAC;ayE
+               ·      VL sma;;;;;rAt·in  ROS·2  MuJoCo  ISAdia·haAC·;ckatLAB ;
+                h Kon·wi;;;;:;;;:nIner·2NOVA·GEN3  TELEO023 PERATI O:;;smart·Nin  ;
+          :dDEia·h;;;;;;;:;::;:::aEckaP·RL  LiDAR  SATELLITES thon ·:;;;winner·;;2024MA;
+     RK· cansa;;:::;;;:::::::::::t4·203  TEXT·TO·ROBOT  ROBO22·T·STU::;;;;;winne;;;;;;r  6DIO;
+  zro·pa;;;;;;:::::;;::::::::::;tenOS  ROBOT·CHALAO  BEYntOND·SAGs  ::;;;;;ee;;g·;;::;;;;;wheIeT
+lcha;;;;;;;;::::::i;:::::::::;;::;Tr  cARIUS  HUAWEI·R&D·UK oaxial·dr;:;;;o;;;;;ne;;:::;;;;;;;
+d;;;;;;;;::::::::; IM;;::::::::::ePbris·hunter  cEoax·eye  mind·driv:::;;;;;;;;;;e ;:::::;;;;;;;
+;;;;;;;;:::::::::::; RIt;::::::::;Awin·arms  sac·pilot  agent·net  g:::;;;;;;;;eoL·t;;:::;;;;;:;
+;;;;;:::::::::;;:::;;;r;:::::::::;Ca;ce  vla  ros·2  mujoco  isaac·l::;::::;;aOLLEb;;;;;;;:;;;;;
+;;;;::;;;;::::;:;; ;:::::::::::::;G ;;;;;;kinova·gen3  ;;teleoperati:::::;:::;on;;;;;;;;;;;;;;;:
+;;;;;::;;;::::;  ;:::::::::::::::;Ed;;ee;p·rl;;;;;  ;;l;;idar  ;sate::::::;;;;::;;l;;;;;;;;;;;;;
+l;;;;;;;;;;;:;;·i;:::::::::::::::;Ltes  mark·;;;;;;;;4;;;3  tex;t·Ot::;::;;;;;;:::;;;o;;;;;:;;;;
+·r;;;;;;;;;;;;:ob;;::::::::::::::oNt  robo;t·;;st;;:;;udio  zr;;onDo:::;:;;;;;:::;;;sO ;;;;;;; ;
+r;;;;;;;;ob;;;:oN;;::::::::::::::t ·chalao;;  be;;;;;;yond·sa;;;gi t::;;;;;;;::::;::;I;;;;;;tari
+us;;;;; ; ;;;;;hS;:::::::::::::::uRawei·;;;;;r&d·;;;;;;uk  impe;riOa:;;;;;:::::::;;:l·;;;;;·coll
 ```
 
 <p align="center">
