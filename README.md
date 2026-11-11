@@ -38,18 +38,18 @@
                           ·@~-;;:,,.:~+*@@@@@@*=~-:,,,,,:;;-~=++*VLA
                             ·;~~-;;:::;;--;:.  . ..,,.,:;-~=+++;;··
                              ··:==-;,              ..,-=+++*;;::;··
-                             MOGGED:~;;:,.,,,:,::-~=+*&&SHORMA::SLAY
+                             MOGGED:~;;:,.,,,:,::-~=+*&&RIZZ::::SLAY
                              THE·MAN·WHO·LEFT·IT·ALL·BEHIND:MIC·CHECK
-                           ··PROOF·THAT·TONY·STARK·HAS·A·HEART DELULU ·
-                        ·····I·AM·THE·HOPE·OF·THE·UNIVERSE KAMEHAMEHA ····
-                  STAY·HUMBLE [SYSTEM]·YOU·HAVE·LEVELED·UP 1V5·CLUTCH ·······
-             ·······ONG:::··:WITH·THIS·TREASURE·I·SUMMON SUPER·SAIYAN:RIZZ ········
-      HOUSE·CAPTAIN::::::::::I·ALONE·AM·THE·HONORED·ONE INFINITE·VOID:SLAY QUIZ·CHAMPION
-MUM·AND·DAD:::::·::::::::::::STAND·PROUD·YOU'RE·STRONG IT'S·OVER·9000:ONG ········:·········
-·······:::::::·:::::::::::::ANYONE·CAN·WEAR·THE·MASK DOMAIN·EXPANSION::ONG ········:::::::··
+                           ··GENIUS·BILLIONAIRE·SHORMA·INNOVATOR ONG ··
+                        ·····PROOF·THAT·TONY·STARK·HAS·A·HEART DELULU ····
+                  STAY·HUMBLE I·AM·THE·HOPE·OF·THE·UNIVERSE SIX·SEVEN ·······
+             ·······ONG:::··:[SYSTEM]·YOU·HAVE·LEVELED·UP BLACK·FLASH:RIZZ ········
+      HOUSE·CAPTAIN::::::::::WITH·THIS·TREASURE·I·SUMMON SUPER·SAIYAN:SLAY QUIZ·CHAMPION
+MUM·AND·DAD:::::·::::::::::::I·ALONE·AM·THE·HONORED·ONE INFINITE·VOID:RIZZ ·······:·········
+·······:::::::·:::::::::::::STAND·PROUD·YOU'RE·STRONG ...GOOD·FOR·YOU::ONG ········:::::::··
 ··:··:·::::::··:::::::::::··:WITH·GREAT·POWER·COMES·GREAT·RESPONSIBILITY ·B·TECH·ECT :::::::
-·:::::::::::····:::::::::::::MAIN·CHARACTER·ENERGY ZERO·CURSED·ENERGY::ONG ···:·······::::::
-:::::::::::::······:::::::::::HEAVENLY·RESTRICTION KINGDOM·OF·SCIENCE:::··FAMILY·FIRST::::::
+·:::::::::::····:::::::::::::ANYONE·CAN·WEAR·THE·MASK SORCERER·KILLER::ONG ···:·······::::::
+:::::::::::::······:::::::::::MAIN·CHARACTER·ENERGY WHATEVER·IT·TAKES:::··FAMILY·FIRST::::::
 ```
 
 <p align="center"><sub>My eyes hold my vision and my faith · my lips say Alhamdulillah · my head holds what I build and what I have won · my heart holds what I love · my shoulders stand on where I come from</sub></p>
