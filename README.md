@@ -16,36 +16,36 @@
    STICKERSOUNDS ROBOT·CHALAO MSc·ROBOTICS IEEE·InGARSS SCENEBREAKER LET·HIM·COOK
   AURA·FARMING IJSRST·2024 LiDAR;;;;;;·;:::::::::::;UNITREE·GO2 HUAWEI·R&D DEEP·RL
   ISPRS·2025 FUSION·360 JULIA::··········       ·····::;;TWIN·TRUTH ISRO·NARL C++
-  6·PATENTS TWIN·ARMS OCTO;:···                     ...:-~+*&SAC·PILOT AGENT·NET ·
-   ISAAC·LAB GDSC·LEAD ·;:···                          ..,-+*&*&ICCC·2025 MARK·43
-   GeoTRACE REPOLENS ··;:··..                            .,-=@@@@IEEE·YP SmolVLA
-    OpenVLA PYTORCH VLA:·.                                .:~@@@&@@AYRPORT HBR·REP
-      MuJoCo QISKIT ACT:,.                         .,;;;,,,.,;=@@@*&LIBERO JETSON
-         NO·CAP GOATED ;,,:,::::;;,         .-+&@@@@@@@***=+-..;&@@&@HUAWEI·R&D
-          ROBOT·STUDIO==&@@@@@@@@@**=:,,--~~=~~===~:  ..,,:~@@@**@@&&&ISRO·NARL
-            6·PATENTS@+*=-:,.,:-~~==+@@~~~=@*+*@@@@@@@@**+=~@~. ;*@@@&&DEEP·RL
-             GeoTRACE@~=---=@@@@@@@@@@@;   *@@@@@=@@@@***+=~*.  ,-+@@@&zronOS
-              MARK·43@--~+@@@*&@@@+==@~.   .*+,.,::;;:,    --   .:~@@@@&ROS·2
-        ,^,    LiDAR@@*: BISMILLAH :=+,      ~=; TAWAKKUL :,    .:-@@***C++
-       |CAN|    OCTO RABBI·ZIDNI·ILMA         :- LA·TAHZAN     .,;-@@++@VLA
-       |SAT|      ACT@-,. .::::::  .,,.    ,;;,;;             ..:;-=@=+@··      __
-        \|/        ··@~;,.         -=@@*=~+@@@@*+           ...,:--=@+@··      [__]==o
-                     ·@-;,.        ;@@*+***=-~~~            ...,;~~+=.;·          \\
-                      @=-;:,.         ..                   ..,:;--~@+~:            \\__
-                       *=-;:,.       ,-~~==*+++=---:,.     .,:;;-~+@@··         ___|__|___
-                       :&=-;:,.. .,ALHAMDULILLAH@@&=;,    .,,:;-~+@@C++
-                         ·+~;:,,.,:ALHAMDULILLAH;:.......:::;;~=+@@·
-                          ·@~-;;:,,.:~+*@@@@@@*=~-:,,,,,:;;-~=++*VLA
-                            ·;~~-;;:::;;--;:.  . ..,,.,:;-~=+++;;··
-                             ··:==-;,              ..,-=+++*;;::;··
-                             MOGGED:~;;:,.,,,:,::-~=+*&&XLR8::::RIZZ
+  6·PATENTS TWIN·ARMS OCTO;:···:::,,......    ...,,:::;-=+#@SAC·PILOT AGENT·NET ··
+   ISAAC·LAB GDSC·LEAD ·;:···;;:::,,,........ ...,,,::::;;=*%@ICCC·2025 GeoTRACE
+   REPOLENS MARK·43 VLA;:··--;;:::,,..          ...,,,:::;-+*%@@IEEE·YP SmolVLA ·
+    OpenVLA PYTORCH ACT:·----;;::,,.             ..,,,,:;;--+%@@@@AYRPORT HBR·REP
+      MuJoCo QISKIT C++:=--;;::,..                ..,,:::;;--=*@@@@LIBERO JETSON
+         NO·CAP GOATED +=---;::::;:,,.....,,,;=++*****++=+**=-=+#@@@KINOVA·GEN3
+          ROBOT·STUDIO#**##%%%%%#*++=-;:::;=+*##**=;:;;---=++++++#@@@HUAWEI·R&D
+            ISPRS·2025*%#+==--==+*#%##*=;;=*######%###**##***=---*@@@ISRO·NARL
+             GeoTRACE#*#*****##%%@%%@%*;  .=*#**=;+****#*++++;;;=+#@@@DEEP·RL
+              MARK·43%**#%@%%**##++=-*=:  .:=-,,:::;;;:,,,,;;:;;-+*%@@IEEE·YP
+        ,^,    zronOS%+= BISMILLAH ,--;,. .,:;;, TAWAKKUL ,,::;-==*%@@MuJoCo
+       |CAN|    ROS· RABBI·ZIDNI·ILMA ,.  .,:::; LA·TAHZAN ,:;;-=+*#@%;OCTO
+       |SAT|      VLA@*=-;:,,,,,...,;;:.  .:;;:;,      ...,::;-=++*#%*;ACT      __
+        \|/        ··@*+=-;;:,,..  ;*%%#++*%@@%#-     ...,,:;--=+**##*C++      [__]==o
+                     ·#*+=-;;::,,..:####%%#+-;;:     ..,,::;-==+*###+···          \\
+                      ##*+=--;;:,,,,,:;:,:,...........,,::;-==+**##%*::            \\__
+                       %#**+=--;;::;;;-==-=+*+=-;;;;;::::;--=+**##%@VLA         ___|__|___
+                       :%##*+==---=ALHAMDULILLAH+*+=--;;;--=+**#%%@OCTO
+                         ·%#**++==+ALHAMDULILLAH=-;;;---=++**##%%ACT
+                          ·%###**+==+*##%%%%%%#*+==-====+**##%%@C++
+                            ·%%##**++++===-;:::::;;---=+**#%%@;;;··
+                             ··:%#*+=;;::::,,,,,::;;-=+#%%@;;;::;··
+                             MOGGED:*+=---------==+*#%@ARISE::::XLR8
                              THE·MAN·WHO·LEFT·IT·ALL·BEHIND:FOUR·ARMS
                            ··GENIUS·TRILLIONAIRE·SHORMA·INNOVATOR ·····
                         ·····I·AM·THE·HOPE·OF·THE·UNIVERSE KAMEHAMEHA ····
                   STAY·HUMBLE [SYSTEM]·YOU·HAVE·LEVELED·UP BEN·10,000 ·······
-             ··········:::··:WITH·THIS·TREASURE·I·SUMMON GOOD·FOR·YOU:SLAY ········
-      HOUSE·CAPTAIN::::::::::I·ALONE·AM·THE·HONORED·ONE INFINITE·VOID:XLR8 QUIZ·CHAMPION
-MUM·AND·DAD:::::·::::::::::::STAND·PROUD·YOU'RE·STRONG IT'S·HERO·TIME:RIZZ ·······:·········
+             ··········:::··:WITH·THIS·TREASURE·I·SUMMON GOOD·FOR·YOU:RIZZ ········
+      HOUSE·CAPTAIN::::::::::I·ALONE·AM·THE·HONORED·ONE INFINITE·VOID:SLAY QUIZ·CHAMPION
+MUM·AND·DAD:::::·::::::::::::STAND·PROUD·YOU'RE·STRONG IT'S·HERO·TIME:XLR8 ·······:·········
 ·······:::::::·:::::::::::::ANYONE·CAN·WEAR·THE·MASK DOMAIN·EXPANSION::············:::::::··
 ··:··:·::::::··:::::::::::··:WITH·GREAT·POWER·COMES·GREAT·RESPONSIBILITY ·B·TECH·ECT :::::::
 ·:::::::::::····:::::::::::::HEAVENLY·RESTRICTION TEN·BILLION·PERCENT::·······:·······::::::

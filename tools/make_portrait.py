@@ -54,7 +54,7 @@ SW,SH=1079,1080
 def to_grid(x,y): return (x-box[0])/(box[2]-box[0])*COLS, (y-box[1])/(box[3]-box[1])*rows
 def region(r,c):
     x=box[0]+(c+0.5)/COLS*(box[2]-box[0]); y=box[1]+(r+0.5)/rows*(box[3]-box[1])
-    if ((x-540)/205)**2+((y-480)/245)**2<=1 and y>=262: return "FACE"   # the face itself: shading only, so it looks like me
+    if ((x-535)/198)**2+((y-480)/245)**2<=1 and y>=262: return "FACE"   # the face itself: shading only, so it looks like me
     if y>=700 and (330<=x<=760 if y>=790 else 400<=x<=720): return "HEART"       # turtleneck over the heart
     if y>=700: return "ROOTS"                                  # shoulders and jacket: grounded
     return "MIND"                                              # head and hair
@@ -70,7 +70,10 @@ def textcell(r,c):
     if reg=="FACE": return False
     if reg in ("VISION","ROOTS","HEART"): return v<q[2]
     return v<q[1]
-RAMP="  .,:;-~=+*&#%@"   # light skin to dark features
+RAMP=" .,:;-=+*#%@"   # light skin to dark features
+# the face gets its own shading: local contrast, then each character is the average of its cell,
+# so thin dark lines like the glasses frame still show as partial tone
+_fs=cv2.resize(cv2.createCLAHE(clipLimit=2.0,tileGridSize=(4,4)).apply(g0).astype(np.float32)/255,(COLS,rows),interpolation=cv2.INTER_AREA)
 _face=None
 def fq(v):
     """Where this value sits among the face's own tones (0 dark .. 1 light), so the face uses the whole ramp."""
@@ -79,6 +82,14 @@ def fq(v):
         vals=[a[r,c] for r in range(rows) for c in range(COLS) if not mask[r,c] and region(r,c)=="FACE"]
         _face=np.sort(np.array(vals))
     return np.searchsorted(_face,v)/len(_face)
+_fr=None
+def fn(v):
+    """Stretch the face's own tones to 0..1 (2nd to 98th percentile)."""
+    global _fr
+    if _fr is None:
+        vals=np.array([_fs[r,c] for r in range(rows) for c in range(COLS) if not mask[r,c] and region(r,c)=="FACE"])
+        _fr=(np.percentile(vals,2),np.percentile(vals,98))
+    return min(1,max(0,(v-_fr[0])/(_fr[1]-_fr[0])))
 def tone(v):
     if v<q[2]: return ";"
     if v<q[3]: return ":"
@@ -96,7 +107,7 @@ for r in range(rows):
     for c in range(COLS):
         if mask[r,c]: continue
         if region(r,c)=="FACE":
-            d=(1-fq(a[r,c]))**1.8          # skin stays light, only real shadows get ink
+            d=1-fn(_fs[r,c])
             line[c]=RAMP[min(len(RAMP)-1,int(d*len(RAMP)))]
         else: line[c]=tone(a[r,c])
     c=0
@@ -155,7 +166,7 @@ for r in range(r0, r0 + 2):  # upper and lower lip
     # never leave half a word touching the lips: clear letters on either side up to the next gap
     for step, start in ((-1, c0 - 1), (1, c0 + len(word))):
         k = start
-        while 0 <= k < COLS and (L[k].isalnum() or L[k] in "#&"):
+        while 0 <= k < COLS and L[k].isalnum():
             L[k] = ":"; k += step
     lines[r] = "".join(L)
 # the top of my head says it
