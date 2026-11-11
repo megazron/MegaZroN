@@ -2,62 +2,62 @@
 <p align="center">I build robots that see, think and move.</p>
 
 ```text
-                           ;TEXT·TO·RtOBexOT  ROtBOT·STUDI;
-                         ;O  zronOS·to  ROBOT·C·rHALAoO  BEYON;               .-.
-                D·SAGITTARboIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·L:         -[|o|]-
-              ONDON  MSc·ROBOTICS  ISRO·NARL:  ItIT·BOMBAY  SMART·INDIA·      '-'
-           HACKATHON·WINNER·2023  SMART·INDIA·HA;CKAT;HON·WINNER·2024  CAN
-          SAT·2022·WINNER  6·PATENTS  EEG·WHEELCHAIR  COAXIAL·DRONE  DEBRIS·
-         HUNTER  TWIN·ARMS  SAC·PILOT  rAGENT·NET o GeoTRACE  ISbPRS·2025  IE
-        oEE·InGAtR·SS  VLA  ROS·2  MuJoCo  ISAAC·LsAB  tKINOVA·GEN3  DEEP·RL u
-        LiDAdio  zrR  QISKIT  GDSC·LEAoD  GOOGLEn·Io/Os·CONNECT  MARK·43  TEXT
-    ·TO·RO  BOT  ROBOT·STUDIO  zronOS  ROBrobOT·ot·cCHALAO  BEYOND·SAGITTARIUSh
-    a  HUlaAoWEI·R&D·UK  IMPERIA  beL·CyonOd·LLEGsagE·LONDON  MSc·ROBOTICS  ISR
-    O·NARLitt  IIT·BOMBAYa  riSus  hMuawART·eINDi·r&d·Iuk A·HACKATHON·WINNER·202
-   3   SMiAmperiRT·INDIA·HACaKATl·coHON·WINNER·2lle024  CANSAT·2022·WINNER  6·PAT
-  ENTS  ge·loEEG·WHEELCHAIR  COAn;;XIdAo;;::::;;;;;nL·DRONE  DEBRIS·HUNTER  TWIN·A
-  RMS   msc· SAC·PILOT  AGENT;:::::·················::;r·NET obo GeoTRACE  ISPRS·2
-  025 tics  IEEE·InGARSS  V :····                 ·····::;LiA  ROS·2  MuJoCo  IsSA
-  AC·Lro·naAB  KINOVA·GENr:····                   ·······::l  iit·bo3  DEEP·RmL  L
-   iDARbay    QIsSKIT  G::·····                   ·········:;DSC·LmEAaD  GOOrt·GL
-   E·I/india·hackaO·CON::·····                      · ·····::tNECT  MARK·43  ThEX
-    T·Ton·winneOr··ROB2:·····                          ·····:OT  ROBOT·STUDIO023
-     zron  sOS mar ROt·:···                            ······:BOT·inCHdia·hALAaO
-         BEYckONaBISMIL···                   ·::::::LAH  R::···:ABBI·D·thonSAGIT
-         TAR·wIinZIDNI···:ILM:::::::··  ····::A  BUI:::::::LD·:::THE·ner·202US
-           HU4  AIMPOS:SIBLE  IN:::NA::::::·:::::::·········MA'AL·USRcaWnsaEI·R
-        ,^, &Dt·2I·YUS:R::·· ···::::A  :··:NEVER·GIVE·UP  ::L:···:A·T0·22·wUK
-       |CAN|  IinAHZAN:::·::·INNALLAHA·:  ·MA'ANA:  10·BILL:I· ··:ON·MnPERIAL
-       |SAT|  ·CePERCE::::NT  TAWAKKUL:·   · :··:::::::··  ::  ···: WOLrLE GE   __
-        \|/   ·L A·MA·T··::::::::::·:A··    ·::·          ·:   ···:WFO6·NDON   [__]==o
-                 IQI·IL:·  ·      ··::·     ··::···········   ····:LA;paMSc·      \\
-                R·BILL:::·············      ···:··            ····:AH;;OBOT        \\__
-                  ICS :··· ······· ····   ··::···     ··    ······:: :;ISR      ___|__|___
-                   O·N:······      ::ARL:::  IIte     ·· ········:::T;·BO
-                     M;:·····      :BAYnts  ::;;·    ············:::;·:
-                      S:·······     ·····:··        ············:::M:··:
-                       ;:······      ················· ·········:::ART·
-                        :::····· ····:ALHAMDULILLAH:···········:::·A·H
-                       :A:::·······:CKALHAMDULILLAH:··········:::;ON·WI
-                         N::·······:;::······:::·············:::;NER
-                          ·;::·······:;;e2023  :::·········:::;;eSMA
-                           Rl::::····:::;;;;:::···········:::;;;cT·
-                            IN;::::·····           ····:::;;;;;:;DI
-                             A·;:::···     ··········::;h;;;;;::aHAC
-                             DR·d;;;::::········:::;STOr;;;;:::·N;E
-                              DRAGstoONn·e;;;;  drBAag;;;;;:;LL·on·Z
-                           AUball·z SO L soO·lo·;;;;;;;;leLEVELvel;;IRA
-                     ·   NGAB;;ing  NG  Tto;;;;;;;;;mbOMB··RAIDr;;ai;AD
-                      CHHATRA;;;;derE·kiR·KING  MARVngEL  SP  ;;;m;a;PATI·S
-                AMBHAJINAGAR ;r;;;vel IDER -MAN  TONY·STARsp;;;;ider; MAHARASHT
-           RA  INDIA  PaurODa;-;;;;;man  K  NIGHTWING ton;;;y·stark  nAR·INTERNATION
-      AL·SCHOOL  BAgabLad  ch; ;;;;nightwing  anime  sk;;ating  swim;hBHIM·COLLEGE  MGM·U
-NIVERSITY  JatrNECapati·sambh;m;;;ing  singing  gaming  espo;;;;rtsA a  B·TECH·ECT  RANK·1·I
-N·DEPARTMjinagEar  maharashtr Ndr;;·stone IME  drag SKAon;;;;;·TINba;a NT  A·P·J·AB india DU
-L·KALAM podar·OF·internati·TH;Gll·  z  solo·leveling  tombSWIMM·r;;a;oE·DEPARTMENT  nal·scho
-SHoISlH  balYObhim·collegTTe ;I;;;ider·NG ki SINGING  GAMng;;;;;;;; ;AM·BEST·STUDENT  mgm·un
- iversity  jPARENnec  b·tech·;I ;;;;;;;;;;;;;;;m;;;;;;;;;;;;;;;;;;;a;ecTS·FELICITATED t  ran
-k·1·in·departm ASSAent  a·p·j:N;;;;;;r;;;;;;;;;;;;;;;;;;;;;;;;;;;;;v;·abLAMU·ALAIKUM  Ndul·k
+                           ;IMPERIAL·COLLEGE·LONDON zronOS;
+                         ;SMART·INDIA·HACKATHON·WINNER·2023 ··;               .-.
+                SMART·INDIA·HACKATHON·WINNER·2024 EEG·WHEELCHAIR ·:         -[|o|]-
+              BEYOND·SAGITTARIUS KINOVA·GEN3:CANSAT·2022·WINNER GeoTRACE      '-'
+           GOOGLE·I/O·CONNECT TEXT·TO·ROBOT VLA ;VLA ;HUAWEI·R&D·UK MuJoCo
+         COAXIAL·DRONE DEBRIS·HUNTER ROBOT·STUDIO ROBOT·CHALAO MSc·ROBOTICS ·
+         IEEE·InGARSS IIT·BOMBAY ISPRS·2025 ISRO·NARL 6·PATENTS TWIN·ARMS VLA
+        SAC·PILOT AGENT·NET ISAAC·LAB GDSC·LEAD DEEP·RL MARK·43 QISKIT ROS·2 ·
+       LiDAR SMART·INDIA·HACKATHON·WINNER·2023 IMPERIAL·COLLEGE·LONDON DEEP·RL
+    SMART·INDIA·HACKATHON·WINNER·2024 BEYOND·SAGITTARIUS CANSAT·2022·WINNER VLA
+    GOOGLE·I/O·CONNECT EEG·WHEELCHAIR TEXT·TO·ROBOT HUAWEI·R&D·UK COAXIAL·DRONE
+    DEBRIS·HUNTER ROBOT·STUDIO ROBOT·CHALAO MSc·ROBOTICS IEEE·InGARSS IIT·BOMBAY
+   KINOVA·GEN3 ISPRS·2025 ISRO·NARL 6·PATENTS TWIN·ARMS SAC·PILOT AGENT·NET ROS·2
+  ISAAC·LAB GDSC·LEAD GeoTRACE ··;;LiDAR;;::::;;;;;MARK·43 zronOS MuJoCo QISKIT ··
+  IMPERIAL·COLLEGE·LONDON VLA;:::::·················::;BEYOND·SAGITTARIUS GeoTRACE
+  CANSAT·2022·WINNER DEEP·RL:····                 ·····::;GOOGLE·I/O·CONNECT ROS·2
+  EEG·WHEELCHAIR ISRO·NARL:····                   ·······::TEXT·TO·ROBOT 6·PATENTS
+   HUAWEI·R&D·UK MARK·43::·····                   ·········:;COAXIAL·DRONE zronOS
+   DEBRIS·HUNTER MuJoCo::·····                      · ·····::ROBOT·STUDIO QISKIT
+    ROBOT·CHALAO LiDAR :·····                          ·····:MSc·ROBOTICS GeoTRACE
+     IEEE·InGARSS ROS·2:···                            ······:KINOVA·GEN3 DEEP·RL
+        TWIN·ARMS ········                   ·::::::······::···:·····IIT·BOMBAY
+         MARK·43 ········:···:::::::··  ····::······:::::::···:::····ISPRS·2025
+          zronOS ·····:BISMILLAH:::··::::::·:::::::·········TAWAKKUL SAC·PILOT
+        ,^, LiDAR ····:·::·· ···::::···:··:NEVER·GIVE·UP ·::·:···:···AGENT·NET
+       |CAN| VLA ·····:::·::KEEP·GOING :  ·······:BISMILLAH:·· ··:···MuJoCo ·
+       |SAT|  VLA ····::::KEEP·GOING ·:·   ··:··:::::::··  ::  ···:··QISKIT ·   __
+        \|/   VLA ·······::::::::::·:···    ·::·          ·:   ···:··DEEP·RL   [__]==o
+               ········:·  ·      ··::·     ··::···········   ····:··;zronOS      \\
+                ······:::·············      ···:··            ····:··;;VLA         \\__
+                  VLA :··· ······· ····   ··::···     ··    ······::·:;VLA      ___|__|___
+                   VLA:······      ::VLA:::MuJoCo     ·· ········:::·;VLA
+                     ·;:·····      :GeoTRACE::;;·    ············:::;·:·
+                      ·:·······     ·····:··        ············:::·:··:
+                       ;:······      ················· ·········:::VLA
+                       ·:::····· ····:ALHAMDULILLAH:···········:::VLA
+                       :·:::·······:::ALHAMDULILLAH:··········:::;LiDAR
+                         ·::·······:;::······:::·············:::;VLA
+                          ·;::·······:;;QISKIT :::·········:::;;VLA
+                           ··::::····:::;;;;:::···········:::;;;VLA
+                            ··;::::·····           ····:::;;;;;:;··
+                             ··;:::···     ··········::;·;;;;;::VLA
+                             ····;;;::::········:::;····;;;;:::··;··
+                             DRAGON·BALL·Z;;;;DR·STONE;;;;;:;SWIMMING
+                           ··TOMB·RAIDER·KING ··;;;;;;;;SPIDER-MAN;;···
+                     ·   JNEC;;TONY·STARK ·;;;;;;;;;NIGHTWING ··;;··;JNEC
+                      INDIA ·;;;;SOLO·LEVELING SKATING SINGING;;;·;·;INDIA
+                MAHARASHTRA ·;·;;;ESPORTS MARVEL GAMING ····;;;;····;AURANGABAD
+           B·TECH·ECT ·:::··:;·;;;;;ANIME DRAGON·BALL·Z ·;;;NIGHTWING:MGM·UNIVERSITY
+      NAMASKAR JNEC:::·::::::;·;;;;TOMB·RAIDER·KING ···;;SPIDER-MAN ;:PARENTS·FELICITATED
+MAHARASHTRA :::···:::::::::::;·;;;SOLO·LEVELING TONY·STARK ·;;;;ANIME:RANK·1·IN·DEPARTMENT ·
+NAMASKAR :::::·::::::::::::::····;;DR·STONE SWIMMING ····;;;;;MARVEL;::AURANGABAD ·:::::::··
+INDIA ·::::::···::::::::::···;SKATING SINGING ESPORTS GAMING ····;;·;:MGM·UNIVERSITY::::::::
+··:··:·:::::··:::::::::::··::;·;;;TOMB·RAIDER·KING DR·STONE;;;;;;;;·;ASSALAMU·ALAIKUM:::::::
+·:::::::::::INDIA::::::::::::;··;;;;;;;;;;;;;;;·;;;;;;;;;;;;;;;;;;;·;::BALBHIM·COLLEGE::::::
+::::::::::::::JNEC :::::::::::·;;;;;;·;;;;;;;;;;;;;;;;;;;;;;;;;;;;;·;:::BALBHIM·COLLEGE:::::
 ```
 
 <p align="center"><sub>My eyes hold my vision and my faith · my lips say Alhamdulillah · my head holds what I build and what I have won · my heart holds what I love · my shoulders stand on where I come from</sub></p>
@@ -69,4 +69,4 @@ k·1·in·departm ASSAent  a·p·j:N;;;;;;r;;;;;;;;;;;;;;;;;;;;;;;;;;;;;v;·abLA
 <a href="https://youtube.com/@MegaZron">YouTube</a> ·
 <a href="https://megazron.medium.com">Medium</a>
 </p>
-<p align="center">Play: <a href="arm/README.md">Teach the arm</a> · <a href="battle/README.md">Robot battle</a> · <a href="https://megazron.github.io/MegaZroN/">live 3D</a></p>
+<p align="center">Play: <a href="arm/README.md">Teach the arm</a> · <a href="battle/README.md">Robot battle</a> · <a href="https://megazron.github.io/MegaZroN/">Teach the arm in live 3D</a></p>

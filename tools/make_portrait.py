@@ -67,24 +67,45 @@ def region(r,c):
     return "MIND"                                              # head and hair
 subj=a[mask==0]
 q=np.quantile(subj,[0.40,0.55,0.68,0.80,0.92])
+WORDLIST={k:[w for w in v.split() if w] for k,v in dict(VISION=VISION,MIND=MIND,HEART=HEART,ROOTS=ROOTS).items()}
+used={k:{w:0 for w in v} for k,v in WORDLIST.items()}
+pos={k:0 for k in WORDLIST}
+def textcell(r,c):
+    """Cells that carry words: dark enough, or any tone in the eyes and the jacket."""
+    if mask[r,c]: return False
+    v=a[r,c]; reg=region(r,c)
+    if reg in ("VISION","ROOTS"): return v<q[2]
+    return v<q[1]
+def tone(v):
+    if v<q[2]: return ";"
+    if v<q[3]: return ":"
+    if v<q[4]: return "·"
+    return " "
+def take(reg, room):
+    """A whole phrase that fits, the least used first, so nothing is cut and nothing repeats more than it must."""
+    fits=[w for w in WORDLIST[reg] if len(w)<=room]
+    if not fits: return None
+    w=min(fits,key=lambda w:(used[reg][w],-len(w)))
+    used[reg][w]+=1; return w
 out=[]
 for r in range(rows):
-    line=[]
+    line=[" "]*COLS
     for c in range(COLS):
-        v=a[r,c]
-        if mask[r,c]: line.append(" "); continue
-        up,lo=streams[region(r,c)]
-        reg=region(r,c)
-        if reg=="VISION" and v<q[2]: line.append(next(up)); continue   # the eyes carry the vision clearly
-        if reg=="ROOTS":                                               # the ground I stand on, written out
-            if v<q[2]: line.append(next(up)); continue
-            if v<q[3]: line.append(next(lo)); continue
-        if v<q[0]: line.append(next(up))
-        elif v<q[1]: line.append(next(lo))
-        elif v<q[2]: line.append(";")
-        elif v<q[3]: line.append(":")
-        elif v<q[4]: line.append("·")
-        else: line.append(" ")
+        if not mask[r,c]: line[c]=tone(a[r,c])
+    c=0
+    while c<COLS:
+        if not textcell(r,c): c+=1; continue
+        reg=region(r,c); e=c
+        while e<COLS and textcell(r,e) and region(r,e)==reg: e+=1
+        x=c
+        if x>0 and line[x-1].isalnum(): line[x]=" "; x+=1     # never glue onto the previous region's word
+        while x<e:
+            w=take(reg,e-x)
+            if not w: break
+            line[x:x+len(w)]=list(w); x+=len(w)
+            if x<e: line[x]=" "; x+=1        # a space between phrases
+        while x<e: line[x]="·"; x+=1          # leftover too short for any word
+        c=e
     out.append("".join(line).rstrip())
 open(sys.argv[3],"w").write("\n".join(out)+"\n")
 print(rows,"rows")
@@ -115,6 +136,12 @@ r0 = int((MOUTH_Y[0] - box[1]) / (box[3] - box[1]) * rows); r1 = int(round((MOUT
 cc = int((MOUTH_X - box[0]) / (box[2] - box[0]) * COLS)
 word = "ALHAMDULILLAH"
 for r in range(r0, r0 + 2):  # upper and lower lip
-    L = lines[r].ljust(COLS); c0 = cc - len(word) // 2
-    lines[r] = L[:c0] + word + L[c0 + len(word):]
+    L = list(lines[r].ljust(COLS)); c0 = cc - len(word) // 2
+    L[c0:c0 + len(word)] = list(word)
+    # never leave half a word touching the lips: clear letters on either side up to the next gap
+    for step, start in ((-1, c0 - 1), (1, c0 + len(word))):
+        k = start
+        while 0 <= k < COLS and L[k] not in " ·:;":
+            L[k] = ":"; k += step
+    lines[r] = "".join(L)
 open(sys.argv[3], "w").write("\n".join(l.rstrip() for l in lines) + "\n")
