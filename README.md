@@ -45,8 +45,8 @@
                   MAHARASHTRA;;;;;NIGHTWING SWIMMING SKATING;;;;··;·;NAMASKAR
              AURANGABAD:::··:;·;;;;;SINGING ESPORTS ANIME;;;;GAMING ;:HOUSE·CAPTAIN
       QUIZ·CHAMPION::::::::::;·;;;;TOMB·RAIDER·KING ···;;NIGHTWING;·;:ASSALAMU·ALAIKUM ·
-B·TECH·ECT :::::·::::::::::::;·;;;;DRAGON·BALL·Z SPIDER-MAN ;;;;····;:CGPA·8.57 ··:CGPA·8.57
-INDIA ·:::::::·:::::::::::::·SOLO·LEVELING TONY·STARK ··;;;DR·STONE ;::MAHARASHTRA :::::::··
+B·TECH·ECT :::::·::::::::::::;·;;;;DRAGON·BALL·Z SPIDER-MAN ;;;;····;:MAHARASHTRA :NAMASKAR
+INDIA ·:::::::·:::::::::::::·SOLO·LEVELING TONY·STARK ··;;;DR·STONE ;::AURANGABAD ·:::::::··
 ··:··:·::::::··:::::::::::··:;··;SWIMMING SKATING SINGING ····;;;;;·;BALBHIM·COLLEGE :::::::
 ·:::::::::::JNEC:::::::::::::;··;;;;;;;;;;;;ESPORTS ·;;;;;;;;;;;;;;·;::INDIA ·:JNEC ··::::::
 :::::::::::::INDIA :::::::::::·;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;·;:::MGM·UNIVERSITY::::::
