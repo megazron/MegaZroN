@@ -41,7 +41,29 @@ while q:
     for dr,dc in ((1,0),(-1,0),(0,1),(0,-1)):
         R,C=r+dr,c+dc
         if 0<=R<rows and 0<=C<COLS and bg[R,C] and not mask[R,C]: mask[R,C]=1; q.append((R,C))
-stream=iter(WORDS*400); lower=iter(WORDS.lower()*400)
+# what each part of me is made of
+VISION=("BUILD·THE·IMPOSSIBLE·WITH·SCIENCE  10·BILLION·PERCENT  ROBOTS·THAT·SEE·THINK·AND·MOVE  "
+        "EMBODIED·AI  VISION·LANGUAGE·ACTION  ROBOTS·FOR·EVERYONE  BRAIN·COMPUTER·INTERFACES  NEUROREHAB  ")
+MIND=("TEXT·TO·ROBOT  ROBOT·STUDIO  zronOS  ROBOT·CHALAO  BEYOND·SAGITTARIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  "
+      "MSc·ROBOTICS  ISRO·NARL  IIT·BOMBAY  SMART·INDIA·HACKATHON·WINNER·2023  SMART·INDIA·HACKATHON·WINNER·2024  "
+      "CANSAT·2022·WINNER  6·PATENTS  EEG·WHEELCHAIR  COAXIAL·DRONE  DEBRIS·HUNTER  TWIN·ARMS  SAC·PILOT  AGENT·NET  "
+      "GeoTRACE  ISPRS·2025  IEEE·InGARSS  VLA  ROS·2  MuJoCo  ISAAC·LAB  KINOVA·GEN3  DEEP·RL  LiDAR  QISKIT  "
+      "GDSC·LEAD  GOOGLE·I/O·CONNECT  MARK·43  ")
+HEART=("DR·STONE  DRAGON·BALL·Z  SOLO·LEVELING  TOMB·RAIDER·KING  MARVEL  SPIDER-MAN  TONY·STARK  NIGHTWING  "
+       "ANIME  SKATING  SWIMMING  SINGING  GAMING  ESPORTS  ")
+ROOTS=("AURANGABAD  CHHATRAPATI·SAMBHAJINAGAR  MAHARASHTRA  INDIA  PODAR·INTERNATIONAL·SCHOOL  BALBHIM·COLLEGE  "
+       "MGM·UNIVERSITY  JNEC  B·TECH·ECT  RANK·1·IN·DEPARTMENT  A·P·J·ABDUL·KALAM·OF·THE·DEPARTMENT  "
+       "SHISHYOTTAM·BEST·STUDENT  PARENTS·FELICITATED  ASSALAMU·ALAIKUM  NAMASKAR  ")
+streams={k:(iter(v*600),iter(v.lower()*600)) for k,v in dict(VISION=VISION,MIND=MIND,HEART=HEART,ROOTS=ROOTS).items()}
+# regions in source-photo pixels (1079x1080 portrait), mapped into the cropped grid
+SW,SH=1079,1080
+def to_grid(x,y): return (x-box[0])/(box[2]-box[0])*COLS, (y-box[1])/(box[3]-box[1])*rows
+def region(r,c):
+    x=box[0]+(c+0.5)/COLS*(box[2]-box[0]); y=box[1]+(r+0.5)/rows*(box[3]-box[1])
+    if 360<=y<=505 and 310<=x<=720: return "VISION"          # eyes and glasses
+    if y>=700 and 400<=x<=720 and y<=935: return "HEART"       # turtleneck over the heart
+    if y>=700: return "ROOTS"                                  # shoulders and jacket: grounded
+    return "MIND"                                              # head and hair
 subj=a[mask==0]
 q=np.quantile(subj,[0.40,0.55,0.68,0.80,0.92])
 out=[]
@@ -50,8 +72,14 @@ for r in range(rows):
     for c in range(COLS):
         v=a[r,c]
         if mask[r,c]: line.append(" "); continue
-        if v<q[0]: line.append(next(stream))
-        elif v<q[1]: line.append(next(lower))
+        up,lo=streams[region(r,c)]
+        reg=region(r,c)
+        if reg=="VISION" and v<q[2]: line.append(next(up)); continue   # the eyes carry the vision clearly
+        if reg=="ROOTS":                                               # the ground I stand on, written out
+            if v<q[2]: line.append(next(up)); continue
+            if v<q[3]: line.append(next(lo)); continue
+        if v<q[0]: line.append(next(up))
+        elif v<q[1]: line.append(next(lo))
         elif v<q[2]: line.append(";")
         elif v<q[3]: line.append(":")
         elif v<q[4]: line.append("·")
