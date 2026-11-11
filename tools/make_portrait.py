@@ -23,7 +23,7 @@ while q:
 # tones of the person only, stretched to the full ramp
 v=g[~bg]; lo,hi=np.percentile(v,1),np.percentile(v,99.5)
 n=np.clip((g-lo)/(hi-lo),0,1)
-RAMP=" .,:;-=+zZ"; gam=0.8
+RAMP=" .,:;-=+zZ"; gam=1.0   # version B: lighter, more detail in the hair
 out=[]
 for r in range(rows):
     L="".join(" " if bg[r,c] else RAMP[min(len(RAMP)-1,int((1-n[r,c])**gam*len(RAMP)))] for c in range(COLS))
