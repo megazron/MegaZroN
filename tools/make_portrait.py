@@ -7,14 +7,14 @@ WORDS=("TEXT·TO·ROBOT  ROBOT·STUDIO  zronOS  ROBOT·CHALAO  BEYOND·SAGITTARI
  "AGENT·NET  GeoTRACE  VLA  ROS·2  MuJoCo  ISAAC·LAB  KINOVA·GEN3  TELEOPERATION  DEEP·RL  LiDAR  SATELLITES  MARK·43  ")
 rgb=Image.open(SRC).convert("RGB")
 w,h=rgb.size
-box=(int(w*0.16),int(h*0.02),int(w*0.84),int(h*0.86))
+box=(int(w*0.16),int(h*0.0),int(w*0.84),int(h*0.86))   # tight on the head so the face gets enough characters
 rgb=rgb.crop(box); im=rgb.convert("L")
 import cv2
 g=np.asarray(im)
 g0=g.copy(); g=cv2.createCLAHE(clipLimit=2.0,tileGridSize=(8,8)).apply(g)
 g=(0.55*g0+0.45*g).astype(np.uint8)
 im=Image.fromarray(g).filter(ImageFilter.UnsharpMask(2,90,2))
-ASPECT=0.50   # char height/width ~2 in GitHub mono
+ASPECT=8.158/19.72   # measured on github.com: 13.6px mono is 8.16px wide, lines 19.72px tall
 rows=int(COLS*im.size[1]/im.size[0]*ASPECT)
 a=np.asarray(im.resize((COLS,rows),Image.LANCZOS),dtype=float)/255
 hi=np.asarray(im,dtype=np.float32)
@@ -26,8 +26,9 @@ a=np.clip(a-0.34*edge,0,1)
 # background: the grey studio wall ~ uniform; mark as bg where close to its level near edges
 hsv=np.asarray(rgb.convert("HSV").resize((COLS,rows),Image.LANCZOS),dtype=float)/255
 v0=np.asarray(rgb.convert("L").resize((COLS,rows),Image.LANCZOS),dtype=float)/255
-lvl=np.median(np.concatenate([v0[:,0:3].ravel(),v0[:,-3:].ravel(),v0[0:2,:].ravel()]))
-bg=(hsv[...,1]<0.12)&(np.abs(v0-lvl)<0.09)
+_full=np.asarray(Image.open(SRC).convert("L"),dtype=float)/255
+lvl=np.median(np.concatenate([_full[300:700,10:120].ravel(),_full[300:700,-120:-10].ravel()]))   # the grey studio wall beside my head
+bg=(hsv[...,1]<0.15)&(np.abs(v0-lvl)<0.12)
 # flood from borders so only connected background is removed
 from collections import deque
 mask=np.zeros_like(bg); q=deque()
@@ -35,7 +36,8 @@ for r in range(rows):
     for c in (0,COLS-1):
         if bg[r,c] and not mask[r,c]: mask[r,c]=1; q.append((r,c))
 for c in range(COLS):
-    if bg[0,c] and not mask[0,c]: mask[0,c]=1; q.append((0,c))
+    for r in (0,rows-1):
+        if bg[r,c] and not mask[r,c]: mask[r,c]=1; q.append((r,c))
 while q:
     r,c=q.popleft()
     for dr,dc in ((1,0),(-1,0),(0,1),(0,-1)):
@@ -69,7 +71,7 @@ SW,SH=1079,1080
 def to_grid(x,y): return (x-box[0])/(box[2]-box[0])*COLS, (y-box[1])/(box[3]-box[1])*rows
 def region(r,c):
     x=box[0]+(c+0.5)/COLS*(box[2]-box[0]); y=box[1]+(r+0.5)/rows*(box[3]-box[1])
-    if 360<=y<=505 and 310<=x<=720: return "VISION"          # eyes and glasses
+    if ((x-540)/205)**2+((y-480)/245)**2<=1 and y>=262: return "FACE"   # the face itself: shading only, so it looks like me
     if y>=700 and 400<=x<=720 and y<=935: return "HEART"       # turtleneck over the heart
     if y>=700: return "ROOTS"                                  # shoulders and jacket: grounded
     return "MIND"                                              # head and hair
@@ -82,8 +84,18 @@ def textcell(r,c):
     """Cells that carry words: dark enough, or any tone in the eyes and the jacket."""
     if mask[r,c]: return False
     v=a[r,c]; reg=region(r,c)
+    if reg=="FACE": return False
     if reg in ("VISION","ROOTS"): return v<q[2]
     return v<q[1]
+RAMP="  .,:;-~=+*&#%@"   # light skin to dark features
+_face=None
+def fq(v):
+    """Where this value sits among the face's own tones (0 dark .. 1 light), so the face uses the whole ramp."""
+    global _face
+    if _face is None:
+        vals=[a[r,c] for r in range(rows) for c in range(COLS) if not mask[r,c] and region(r,c)=="FACE"]
+        _face=np.sort(np.array(vals))
+    return np.searchsorted(_face,v)/len(_face)
 def tone(v):
     if v<q[2]: return ";"
     if v<q[3]: return ":"
@@ -99,7 +111,11 @@ out=[]
 for r in range(rows):
     line=[" "]*COLS
     for c in range(COLS):
-        if not mask[r,c]: line[c]=tone(a[r,c])
+        if mask[r,c]: continue
+        if region(r,c)=="FACE":
+            d=(1-fq(a[r,c]))**1.8          # skin stays light, only real shadows get ink
+            line[c]=RAMP[min(len(RAMP)-1,int(d*len(RAMP)))]
+        else: line[c]=tone(a[r,c])
     c=0
     while c<COLS:
         if not textcell(r,c): c+=1; continue
@@ -138,8 +154,15 @@ for name, r0, c0 in PLACES:
         continue  # never draw over the face
     for i, x in enumerate(art):
         L = lines[r0 + i]; lines[r0 + i] = L[:c0] + x.ljust(w) + L[c0 + w:]
+# my eyes hold my faith and my vision: a short line inside each lens
+def place(text, sx, sy):
+    rr = int((sy - box[1]) / (box[3] - box[1]) * rows); c0 = int((sx - box[0]) / (box[2] - box[0]) * COLS) - len(text) // 2
+    L = list(lines[rr].ljust(COLS)); L[c0 - 1:c0 + len(text) + 1] = list(" " + text + " "); lines[rr] = "".join(L)
+LEFT, RIGHT = 410, 598                     # lens centres x in the photo; pupils sit at y~440, verses go under them
+place("BISMILLAH", LEFT, 470); place("RABBI·ZIDNI·ILMA", LEFT, 492)
+place("TAWAKKUL", RIGHT, 470); place("LA·TAHZAN", RIGHT, 492)
 # the lips say it
-MOUTH_Y, MOUTH_X = (598, 632), 530        # lips in source pixels (top, bottom) and centre x
+MOUTH_Y, MOUTH_X = (606, 606), 505        # lips in source pixels (top, bottom) and centre x
 r0 = int((MOUTH_Y[0] - box[1]) / (box[3] - box[1]) * rows); r1 = int(round((MOUTH_Y[1] - box[1]) / (box[3] - box[1]) * rows))
 cc = int((MOUTH_X - box[0]) / (box[2] - box[0]) * COLS)
 word = "ALHAMDULILLAH"
@@ -149,7 +172,7 @@ for r in range(r0, r0 + 2):  # upper and lower lip
     # never leave half a word touching the lips: clear letters on either side up to the next gap
     for step, start in ((-1, c0 - 1), (1, c0 + len(word))):
         k = start
-        while 0 <= k < COLS and L[k] not in " ·:;":
+        while 0 <= k < COLS and (L[k].isalnum() or L[k] in "#&"):
             L[k] = ":"; k += step
     lines[r] = "".join(L)
 open(sys.argv[3], "w").write("\n".join(l.rstrip() for l in lines) + "\n")

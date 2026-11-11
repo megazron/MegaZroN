@@ -2,62 +2,54 @@
 <p align="center">I build robots that see, think and move.</p>
 
 ```text
-                           ;SIH·2024·PORT·SECURITY·1·LAKH ;
-                         ;SMART·INDIA·HACKATHON·WINNER·2023 ··;               .-.
-                SMART·INDIA·HACKATHON·WINNER·2024 3·GERMAN·PATENTS:         -[|o|]-
-              FELICITATED·BY·ISRO·CHAIRMAN ·:CANSAT·GRAND·FINALIST·2024       '-'
-           IIT·BOMBAY·RESEARCH·AWARD KINOVA·GEN3;OCTO;GOOGLE·DEVFEST·AWARD
+                                 ·;GOOGLE·DEVFEST·AWARD
+   [=][=]-(o)-[=][=]       :SIH·2024·PORT·SECURITY·1·LAKH :                   .-.
+          /|\          ·;SMART·INDIA·HACKATHON·WINNER·2023 OCTO             -[|o|]-
+               SMART·INDIA·HACKATHON·WINNER·2024 BEYOND·SAGITTARIUS;          '-'
+           :;FELICITATED·BY·ISRO·CHAIRMAN ··;VLA:ACT ;INDIAN·PATENT·540791
+          CANSAT·GRAND·FINALIST·2024 IIT·BOMBAY·RESEARCH·AWARD TEXT·TO·ROBOT
          QISKIT·QUANTUM·EXCELLENCE SIH·THREE·YEARS·IN·A·ROW MICROSOFT·Q#·BLOG
-         QUANTUM·HACKATHON·TOP·16 GOOGLE·FOR·DEVELOPERS·AD BEYOND·SAGITTARIUS
-        IMPERIAL·COLLEGE·LONDON SIH·2023·TRAFFIC·1·LAKH INDIA·SCIENCE·FESTIVAL
-       2·SOUTH·AFRICAN·PATENTS IASc·INSA·NASI·FELLOW INDIAN·PATENT·540791 VLA
-    CANSAT·2022·WINNER GOOGLE·I/O·CONNECT IDE·BOOTCAMP·TOP·5 GLOBAL·TALENT·VISA
-    GDSC·800+·MEMBERS DIFFUSION·POLICY BRAIN·TUMOR·YOLO EEG·WHEELCHAIR GeoTRACE
-    URSC·BENGALURU PHONE·TO·ROBOT TEXT·TO·ROBOT HUAWEI·R&D·UK COAXIAL·DRONE ACT
-   DEBRIS·HUNTER STAR·AVIONICS HYPERSPECTRAL STICKERSOUNDS ROBOT·STUDIO ISRO·NARL
-  ROBOT·CHALAO MSc·ROBOTICS ROS·2;;LiDAR;;::::;;;;;IEEE·InGARSS SCENEBREAKER JULIA
-  IJSRST·2024 UNITREE·GO2 C++;:::::·················::;IIT·BOMBAY ISPRS·2025 ROS·2
-  FUSION·360 TWIN·TRUTH OCTO:····                 ·····::;6·PATENTS TWIN·ARMS VLA
-  SAC·PILOT AGENT·NET ACT :····                   ·······::ISAAC·LAB GDSC·LEAD C++
-   ICCC·2025 REPOLENS ··::·····                   ·········:;DEEP·RL MARK·43 OCTO
-   IEEE·YP SmolVLA VLA ::·····                      · ·····::OpenVLA PYTORCH ACT
-    AYRPORT HBR·REP C++:·····                          ·····:zronOS MuJoCo QISKIT
-     LIBERO JETSON OCTO:···                            ······:BEYOND·SAGITTARIUS
-        ISRO·NARL ········                   ·::::::······::···:·····KINOVA·GEN3
-         GeoTRACE ·······:···:::::::··  ····::······:::::::···:::····IIT·BOMBAY
-          DEEP·RL ····:BISMILLAH:::··::::::·:::::::·········TAWAKKUL ISPRS·2025
-        ,^, LiDAR ····:·::·· ···::::···:··:NEVER·GIVE·UP ·::·:···:···6·PATENTS
-       |CAN| VLA ·····:::·::KEEP·GOING :  ·······:BISMILLAH:·· ··:···REPOLENS
-       |SAT|  ACT ····::::KEEP·GOING ·:·   ··:··:::::::··  ::  ···:··MARK·43    __
-        \|/   C++········::::::::::·:···    ·::·          ·:   ···:··IEEE·YP   [__]==o
-               ········:·  ·      ··::·     ··::···········   ····:··;zronOS      \\
-                ······:::·············      ···:··            ····:··;;OCTO        \\__
-                  VLA :··· ······· ····   ··::···     ··    ······::·:;ACT      ___|__|___
-                   C++:······      ::VLA:::MuJoCo     ·· ········:::·;ACT
-                     ·;:·····      :SmolVLA ::;;·    ············:::;·:·
-                      ·:·······     ·····:··        ············:::·:··:
-                       ;:······      ················· ·········:::OCTO
-                       ·:::····· ····:ALHAMDULILLAH:···········:::C++
-                       :·:::·······:::ALHAMDULILLAH:··········:::;ROS·2
-                         ·::·······:;::······:::·············:::;VLA
-                          ·;::·······:;;PYTORCH:::·········:::;;OCTO
-                           ··::::····:::;;;;:::···········:::;;;ACT
-                            ··;::::·····           ····:::;;;;;:;··
-                             ··;:::···     ··········::;·;;;;;::C++
-                             ····;;;::::········:::;····;;;;:::··;··
-                             DRAGON·BALL·Z;;;;DR·STONE;;;;;:;SWIMMING
-                           ··TOMB·RAIDER·KING ··;;;;;;;;SPIDER-MAN;;···
-                     ·   JNEC;;TONY·STARK ·;;;;;;;;;NIGHTWING ··;;··;JNEC
-                      INDIA ·;;;;SOLO·LEVELING SKATING SINGING;;;·;·;INDIA
-                HOUSE·CAPTAIN;·;;;ESPORTS MARVEL GAMING ····;;;;····;AURANGABAD
-           MAHARASHTRA :::··:;·;;;;;ANIME DRAGON·BALL·Z ·;;;NIGHTWING:MGM·UNIVERSITY
-      QUIZ·CHAMPION:::·::::::;·;;;;TOMB·RAIDER·KING ···;;SPIDER-MAN ;:PARENTS·FELICITATED
-B·TECH·ECT ·:::···:::::::::::;·;;;SOLO·LEVELING TONY·STARK ·;;;;ANIME:SCIENCE·OLYMPIAD·GOLD
-CGPA·8.57:::::·::::::::::::::····;;DR·STONE SWIMMING ····;;;;;MARVEL;::NAMASKAR ···:::::::··
-INDIA ·::::::···::::::::::···;SKATING SINGING ESPORTS GAMING ····;;·;:5TH·SEM·TOPPER::::::::
-··:··:·:::::··:::::::::::··::;·;;;TOMB·RAIDER·KING DR·STONE;;;;;;;;·;ASSALAMU·ALAIKUM:::::::
-·:::::::::::JNEC ::::::::::::;··;;;;;;;;;;;;;;;·;;;;;;;;;;;;;;;;;;;·;::BALBHIM·COLLEGE::::::
-::::::::::::::INDIA:::::::::::·;;;;;;·;;;;;;;;;;;;;;;;;;;;;;;;;;;;;·;:::BALBHIM·COLLEGE:::::
+        QUANTUM·HACKATHON·TOP·16 GOOGLE·FOR·DEVELOPERS·AD CANSAT·2022·WINNER ·
+       IMPERIAL·COLLEGE·LONDON SIH·2023·TRAFFIC·1·LAKH 2·SOUTH·AFRICAN·PATENTS
+    INDIA·SCIENCE·FESTIVAL IASc·INSA·NASI·FELLOW GOOGLE·I/O·CONNECT KINOVA·GEN3
+    IDE·BOOTCAMP·TOP·5 GLOBAL·TALENT·VISA GDSC·800+·MEMBERS 3·GERMAN·PATENTS C++
+   DIFFUSION·POLICY BRAIN·TUMOR·YOLO EEG·WHEELCHAIR URSC·BENGALURU PHONE·TO·ROBOT
+  HUAWEI·R&D·UK COAXIAL·DRONE ··;;;;;;·;:::::::::::;DEBRIS·HUNTER STAR·AVIONICS ··
+  HYPERSPECTRAL STICKERSOUNDS::··········       ·····::;;ROBOT·STUDIO ROBOT·CHALAO
+  MSc·ROBOTICS IJSRST·2024;:···                     ...:-~+*&IEEE·InGARSS GeoTRACE
+   SCENEBREAKER REPOLENS;:···                          ..,-+*&*&UNITREE·GO2 ROS·2
+   IIT·BOMBAY ISRO·NARL;:··..                            .,-=@@@@ISPRS·2025 LiDAR
+    FUSION·360 DEEP·RL :·.                                .:~@@@&@@TWIN·TRUTH OCTO
+      6·PATENTS MARK·43:,.                         .,;;;,,,.,;=@@@*&TWIN·ARMS VLA
+         SAC·PILOT ACT ;,,:,::::;;,         .-+&@@@@@@@***=+-..;&@@&@AGENT·NET
+          ISAAC·LAB ··==&@@@@@@@@@**=:,,--~~=~~===~:  ..,,:~@@@**@@&&&GDSC·LEAD
+            ICCC·2025@+*=-:,.,:-~~==+@@~~~=@*+*@@@@@@@@**+=~@~. ;*@@@&&IEEE·YP
+             SmolVLA @~=---=@@@@@@@@@@@;   *@@@@@=@@@@***+=~*.  ,-+@@@&zronOS
+              OpenVLA@--~+@@@*&@@@+==@~.   .*+,.,::;;:,    --   .:~@@@@&JULIA
+        ,^,    ROS·2@@*: BISMILLAH :=+,      ~=; TAWAKKUL :,    .:-@@***C++
+       |CAN|    OCTO RABBI·ZIDNI·ILMA         :- LA·TAHZAN     .,;-@@++@VLA
+       |SAT|      ACT@-,. .::::::  .,,.    ,;;,;;             ..:;-=@=+@··      __
+        \|/        ··@~;,.         -=@@*=~+@@@@*+           ...,:--=@+@··      [__]==o
+                     ·@-;,.        ;@@*+***=-~~~            ...,;~~+=.;·          \\
+                      @=-;:,.         ..                   ..,:;--~@+~:            \\__
+                       *=-;:,.       ,-~~==*+++=---:,.     .,:;;-~+@@··         ___|__|___
+                       :&=-;:,.. .,ALHAMDULILLAH@@&=;,    .,,:;-~+@@C++
+                         ·+~;:,,.,:ALHAMDULILLAH;:.......:::;;~=+@@·
+                          ·@~-;;:,,.:~+*@@@@@@*=~-:,,,,,:;;-~=++*VLA
+                            ·;~~-;;:::;;--;:.  . ..,,.,:;-~=+++;;··
+                             ··:==-;,              ..,-=+++*;;::;··
+                             ····;;:~;;:,.,,,:,::-~=+*&&·;;;::::····
+                             SPIDER-MAN;·;;;;;;;MARVEL;;;;;:;DR·STONE
+                           ··TOMB·RAIDER·KING ;·;;;;;;;;TONY·STARK;····
+                        INDIA;;;DRAGON·BALL·Z ··;SOLO·LEVELING ·;;;·;JNEC
+                  MAHARASHTRA;;;;;NIGHTWING SWIMMING SKATING;;;;··;·;NAMASKAR
+             AURANGABAD:::··:;·;;;;;SINGING ESPORTS ANIME;;;;GAMING ;:HOUSE·CAPTAIN
+      QUIZ·CHAMPION::::::::::;·;;;;TOMB·RAIDER·KING ···;;NIGHTWING;·;:ASSALAMU·ALAIKUM ·
+B·TECH·ECT :::::·::::::::::::;·;;;;DRAGON·BALL·Z SPIDER-MAN ;;;;····;:CGPA·8.57 ··:CGPA·8.57
+INDIA ·:::::::·:::::::::::::·SOLO·LEVELING TONY·STARK ··;;;DR·STONE ;::MAHARASHTRA :::::::··
+··:··:·::::::··:::::::::::··:;··;SWIMMING SKATING SINGING ····;;;;;·;BALBHIM·COLLEGE :::::::
+·:::::::::::JNEC:::::::::::::;··;;;;;;;;;;;;ESPORTS ·;;;;;;;;;;;;;;·;::INDIA ·:JNEC ··::::::
+:::::::::::::INDIA :::::::::::·;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;·;:::MGM·UNIVERSITY::::::
 ```
 
 <p align="center"><sub>My eyes hold my vision and my faith · my lips say Alhamdulillah · my head holds what I build and what I have won · my heart holds what I love · my shoulders stand on where I come from</sub></p>
