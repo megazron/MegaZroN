@@ -1,63 +1,86 @@
-<!-- Two animated SVGs built by generate_assets.py in the style of megazron.com. Everything else is plain text, so the page loads fast. -->
+<h3 align="center">Gaus Mohiuddin Sayyad · MegaZroN</h3>
+<p align="center">I build robots that see, think and move.</p>
 
-<a href="https://megazron.com"><img src="assets/omnitrix.svg" width="100%" alt="Gaus Mohiuddin Sayyad — Robotics Software Engineer. MSc Robotics '26 at Imperial, ex Huawei R&D UK, ex ISRO, ex IIT Bombay. Builds the impossible with science."></a>
+```text
+                                                tTEXT·TO·Re::::    :
+   [=][=]-(o)-[=][=]                    :xOBOt·T  ROBOT·STUDIO  zronOS;                                 .-.
+          /|\                        :t  ROBOT·CHALAO  BEYOND·SAGITTARIUS                             -[|o|]-
+                             o·;;;roHUbAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  o                          '-'
+                          ISRO·NARL  IIT·BOMBAY  SMART·tINDIA·HACKATHON·WINNER·202:
+                        3  SMART·INDIA·HACKATHON·WINNER·:: 2 :024ro;  CANSAT·2022·WINNER
+                    ; bo 6t·PATENTS  EEG·WH·sEELCHAIR  COtAXI:uAdi;:;;o  zL·DRONE  DEBRIS·
+  ~~+~~   ~~+~~    HUNr;TER  COAX·EYE  MIND·DRIVE  TWIN·ARMS  SAC·PILOT on AGENT·NET  GeoTRA
+      \___/        CosE;  VLA  ROS·2  MuJoCo  ISAAC·LAB  KINOVA·GEN3  TELEOPER : ATION  DEEP·
+      [o_o]       rRL  LiDAR  SATELLITES  MARK·43  TEXT·TO·ROBOT  ROBOT·STUDIOo b ozronOS  RO       ~~+~~   ~~+~~
+      /   \      BOT·CHALAO  BEYOND·SAGITTARIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  ISRO:          \___/
+  ~~+~~   ~~+~~ ;t·NARL  IIT·BOMBAY  SMART·INDIA·HACKATHON·WINNER·2023  SMART·INDIA·HACKATHON·          [o_o]
+              WINNER·2024  CANSAT·2022·WINNER  6·PATENTS  EEG·WHEELCHAIR  COAXIAL·DRONE  DEBRIS         /   \
+              ·HUNTER  COAX·EYE  MIND·DRIVE  TWIN·ARMS  SAC·PILOT  AGENT·NET  GeoTRACE  V·LA  R     ~~+~~   ~~+~~
+             OS·2  MuJoCo  ISAAC·LAB  KINOVA·GEN3 c TELEOPERAThIaON  DEEP·RL  LiDAR  SATELLITES
+           ; MARK·43  TEXT·TO·ROBOT  ROBOT·STUDIO  zronlOS  ROBOT·CHALAO  BEYOND·SAGITTARIUS  HUA
+           WEI·R&Da·UK  IMPERIAL·COLLEGE·LOo:::;;: :::·····:::::: NDON  bISRO·NARL  IIT·BOMBAY  SM
+           eART·INDIA·HACKATHON·WINNER·2y:············        ·····:;o023  SMART·INDIA·HACKATHON·W
+           INNER·2024  CANSAT·2022·WINN:·····                    ·····:nER  6·PATENTS  EEG·WHEELCH       _[]_
+           AIR  COAXIAL·DRONE  DEBRIS:····                        ······:d·HUNTER  COAX·EYE  MIND·     _|____|_
+            DRIVE  TWIN·ARMS  SAC·P;······                        ·······:·sILOT  AGENT·NET  GeoTR    (o)----(o)
+            ACE  VLA  ROS·2  MuJoC;·······                           ·····:ao  ISAAC·LAB  KINOVA·
+             GEN3  TELEOPERATION g·······                           ······: DEEP·RL  LiDAR  SATELL
+              ITES  MARK·43  TEXT;······                             ······:·TO·ROBOT  ROBOT·STUDI
+        ,^,     O  zronOS  ROBOT·;····                          ·············iCHALAO  BEYOND·SAGI
+       |CAN|      TTARIUS  HUAWEI;·····     ···         ···::;tt·R&D·a;ri:····:UK  IMPERIAL·COL;
+       |SAT|       LEGE·LONDON  I:··:usS;::;::············::::;;:········: ::;··RO·NARL  IIT·BO           __
+        \|/         MBAY  SMART·I: h:::::::::·::;::····:;::··::···········:N::::DIA·HACKATHON·           [__]==o
+                      WINNER·202u:;···········:::3a····· ;;w SMART·INDIe::;:····:A·HACKATHON·i              \\
+                       WINNER·20:·:····::·24  CANSA:·  ·rT·20&·;22·W;d·;;::· ····;INNER  6·PA                \\__
+                        TENTS  E;···:uEG·;WHEE:::k:·    ·L·······::····· ···  ···:CHAIR  COAX             ___|__|___
+                        IAL·DRONE···::::·········:··     ·:·            ···  ·····  DEBRIS·H
+                         UNTER  C:···········  ····      ·····         ··    ·····OA  iX·EYm
+                          E  MINp····         ····       ······             ······D·;:;DRIV
+                            E  TW·············  ··       ·  ··              ······:I:·N·AR
+                             MS  ···           ······ ···;e:··            ·········r·:SAC
+                              ·PI····          ·:LOT :: AGENT:           ··········:··NE
+                                T;····         ·i a::l·c·····           ··········:···:
+                               ·  :·····          ······               ···········o····
+                                  l·······         ·   ·····    ···   ···········:GeoT
+                                 ·l:······    ·····::;;;egeRA::·················:·CE
+                                  :V:···········:LA  ;;;:····:l;:··············:oROS·2
+                                     :··········;:····  · ···················::n Mud
+                                     J:············:·::::;o::···············::;oCo
+                                       :··········::;ISAAn::··············::;  C·L
+                                       Ai::··············    ···········::;sro:B
+                                        · ;::·····              ······:;narl;;:KIN
+                                         OV :::···· ·· ············:;A iit·;:::·GE
+                                       · N3  b;o::·············::mTELbay  :::;EOsP
+                                      ··ERATIONma  rtD;;·indiaEEP·R·hac;;:;L  LiDAR
+                                   ··  SATELLITES  MARK·43 k athon·winneTEXT·TO·Rr·OBO
+                                ··  T  202ROBOT·STUDIO3  ;;;;;;sma  zronOS  ROBrt·inOT·C
+                          ···    HALAdia·hacO  BEYOND·SAGITTARIUS  HUAWEI·R&Dkatho·n·wiUK
+                      ··    n IMPEner·2024  canRIAL·COLLEGE·LONDON  ISRO·Nsat·AR20L2;2·wi  II
+                  ·    T·Bnner ;;;;;;;;;;O 6·patMBAY  SMART·INDIA·HACKAents T eHOeNg;;;·wheel·WINN
+                  cER·2hai;;;;:;;;:::;;:;02r  co3  SMART·INDIA·HACKAaxialTHON·WIN·Nd:;;;rone  debrisER·
+             h·202unt;;;:;;;;;:;;:::;:::;4 er   CANSAT·2022·WINNER  6·PATENTcSoax· e:;;;;ye  mind;;;;·dr EEi
+      vG·WHe  tw;;;;;;::;;;;::::::::::::;EEin·aLCHAIR  COAXIAL·DRONE  DEBRrms  IS·Hs::;;;;;;ac·pil;;;;;;;ot  UNTEa
+gR  COAent·;;;;;;;::::::;;:::::::::::::;nX·EYet  gE  MIND·DRIVE  TWIN·eotraARMS  ce ::;;;;;; vla;  ;;;:;;:;;;;rosSAC·P
+IL·2  muj;;;;;;;:::::::;;;;::::::::::;o;:cOo T  AGENT·NET  GeoTRAC iE  VLA  Rsaac·la::;;;;;b  ;;;;ki;;:::;:;;;;;nova·g
+en3  te;;;;:;;::::::::le;:::::::::;;;::::oOperatioS·2  MuJoCo  ISAAC·LABn  deep·rl ;;;:;;;;;;;;;;; li;;::::;;:;;;;;;d;
+ar;;;;;;;;;::::::::::;    ;::::::::::::::sKatellites  mark·4I3  text·to·robot  robo;:::;;;;;;;;;;;t·st;:::::::;;;;;;;;
+;;;;;;;;::::::::::::;;:;uNOVd;:::::::::::iAo  zronos  robot·chalao  beyond·sagittar;:::;:;;;;;;;;;;i·Gu;:;:::;;;;;;::;
+;;;;;;;::::;:::::;;:::::::;Es;::::::::::: N huawei·r&d·uk  impe3ria l·college·lond :::;;;:::;;;onTELEO ;;;;;::;;;;;;;;
+;;;;;;::;::;:::::;;:::;;;;;:::::::::::::: Pi;;;sro·narl  iit·bombay  smart·india·hE:::::::::::;aRAck;;;;;;;;;;::;;;;;;
+;;;;;:;;;;;;:::::;;;;at;:::::::::::::::::hTo;;n·w;;inner;·;;;;2;0;2;;;3;  smart·ind::::::;;::::;;;;i;;;;;;:;;;;;;;;;::
+;;;;;;::;;;;;::::;aI·::::::::::::::::::::hOa;;cka;thon·;;;;;;;w;;;i;;;nner·20;24  c;:::::::::;;;:;:;an;;;;;;;;;;;;;;;;
+s;;;;;;;;;;;;;::;;aN;;;::::::::::::::::::t ·202;;;2·winn;;;;;;;;;e;;;;r  6·patents :::;::;;;;;;:;::::;;; ;;;;;;;:;;;;;
+ ;;;;;;;;;;;;;::;:;De;;::::::::::::::::::eEg·wheelchair;;;; ;;;;;; coaxial·dr;one E;:::::::;;;;;:::::;;; Pd;;;;;;;;e;;
+b;;;;;;;;;;;;;;;;;;·r;;::::::;:::::::::::iRs·hunter;;; ;; co;;;;;ax·eye  mind;·driL;:::;:;;;;;;:::::;:;;  v;;;;;;;e  t
+wi;;;;;;;;;n·;;;;;;aL;:::::::::::::::::::iDrms;  sac;·pilot ;;;;;;; agent·n;;;et  A:::;;;;;;:;:::::;;:::R ;;g;;;;eotra
+ce ;;;;; ;;v;;;;;;;l ;:::::::::::::::::::SAa  ros·;;;2 ; muj;;;;;;;;oco  isaac·laTE;:;;;;;::::::::::;;:;Lb;;;;;;  kino
+```
 
 <p align="center">
-<a href="https://megazron.com"><b>megazron.com</b></a> · <a href="https://www.linkedin.com/in/gaus-mohiuddin-sayyad/">LinkedIn</a> · <a href="https://youtube.com/@MegaZron">YouTube</a> · <a href="https://scholar.google.com/citations?user=GXrd9PIAAAAJ&hl=en">Scholar</a> · <a href="https://megazron.medium.com">Medium</a> · <a href="mailto:gmsayyadsvc4@gmail.com">Email</a>
+<a href="https://megazron.com">megazron.com</a> ·
+<a href="https://www.linkedin.com/in/gaus-mohiuddin-sayyad/">LinkedIn</a> ·
+<a href="https://scholar.google.com/citations?user=GXrd9PIAAAAJ&hl=en">Scholar</a> ·
+<a href="https://youtube.com/@MegaZron">YouTube</a> ·
+<a href="https://megazron.medium.com">Medium</a>
 </p>
-
-<p align="center">
-I build the layer where <b>perception turns into action</b> — vision-language-action policies, deep-RL controllers and real-time teleoperation on real robot arms.<br>
-<sub>MSc Human &amp; Biological Robotics @ Imperial College London · graduating Sep 2026 · <b>open to robotics &amp; embodied-AI roles</b></sub>
-</p>
-
-<a href="https://github.com/megazron?tab=repositories"><img src="assets/forms.svg" width="100%" alt="Six flagship projects: Twin Arms (dual-arm teleoperation), SAC Pilot (deep RL), Agent Net (VLA benchmarking), Mind Drive (EEG wheelchair), Debris Hunter (CanSat), Coax Eye (drone)"></a>
-
-<p align="center"><sub>
-<a href="https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation">Twin Arms</a> ·
-<a href="https://github.com/megazron/SAC-for-Multi-Functional-Assistive-Robotics-in-MuJoCo">SAC Pilot</a> ·
-<a href="https://github.com/megazron/Robot-Agent-Network-for-VLAs">Agent Net</a> ·
-<a href="https://github.com/megazron/eeg-operated-wheelchair">Mind Drive</a> ·
-<a href="https://github.com/megazron/can-sat-for-debris-detection">Debris Hunter</a> ·
-<a href="https://github.com/megazron/autonmousdrone">Coax Eye</a>
-</sub></p>
-
-<!-- play:start (generated by generate_games.py) -->
-<p align="center">
-<a href="arm/README.md"><img src="arm/card.svg" width="49%" alt="Teach the arm: a click game. Show a robot arm a pick and place task and it repeats the order by itself."></a>
-<a href="battle/README.md"><img src="battle/card.svg" width="49%" alt="Robot battle: a click game. A turn-based duel against three enemy bots."></a>
-<br>
-<a href="arm/r.md"><img src="arm/btn/pick-r.svg" width="16%" alt="Pick red"></a>
-<a href="arm/b.md"><img src="arm/btn/pick-b.svg" width="16%" alt="Pick blue"></a>
-<a href="arm/y.md"><img src="arm/btn/pick-y.svg" width="16%" alt="Pick yellow"></a>
-<a href="battle/s1/start.md"><img src="battle/btn/stage1.svg" width="16%" alt="Fight the Scrap Rover"></a>
-<a href="battle/s2/start.md"><img src="battle/btn/stage2.svg" width="16%" alt="Fight the Heavy Mech"></a>
-<a href="battle/s3/start.md"><img src="battle/btn/stage3.svg" width="16%" alt="Fight the Omega Core"></a>
-</p>
-<p align="center"><sub>Two games that run right here in the README: every click opens the next pre-rendered state. Want the real thing? <a href="https://megazron.github.io/MegaZroN/"><b>Play the live 3D version</b></a>: drag a 6-axis arm, teach it a task, then watch it repeat the task by itself.</sub></p>
-<!-- play:end -->
-
-<details>
-<summary><b>OPEN THE FULL MISSION LOG</b> — experience · patents · papers · awards · stack</summary>
-<br>
-
-**Experience**
-
-- **2025–26 · Huawei Technologies R&D UK** — Robotics Software Engineer (RA). Benchmarked SmolVLA, OpenVLA, Octo and π0 across 9 prompt formats and 10 LIBERO tasks; built graph-dataset generation from 3D robot episodes and the end-to-end evaluation architecture.
-- **2025 · Imperial College London** — Research Assistant (microfabrication) · HBR Student Representative.
-- **2025 · IIT Bombay** — Research Intern, *Satellites for Surveillance* → **GeoTRACE** (IEEE InGARSS 2025).
-- **2024 · ISRO NARL** — Summer Research Fellow (IASc · INSA · NASI): atmospheric LiDAR acquisition and ML cloud retrieval.
-- **2023–24 · Google Developer Student Clubs** — Lead; 800+ members mentored across 12 events.
-- **2022–24 · Astronautical Society of India** — Team Leader, CanSat India 2022.
-
-**Patents** — Germany DE202025101530U1 (EEG wheelchair), DE202025102068U1 (coaxial drone), DE202025102217U1 (3D-printing rover) · South Africa ZA 2023/01848, ZA 2023/02620 · India 540,791
-
-**Publications** — GeoTRACE (IEEE InGARSS 2025) · Hyperspectral clay & mineral exploration (ISPRS Annals 2025) · LiDAR cloud-parameter retrieval with ML (ICCC 2025) · Flood mapping with microwave remote sensing (IJSRST 2024) — [Google Scholar](https://scholar.google.com/citations?user=GXrd9PIAAAAJ&hl=en)
-
-**Awards** — Smart India Hackathon winner 2023 & 2024 · CanSat 2022 winner (IEEE-AESS) · Shishyottam Best Student Award · IASc-INSA-NASI Summer Research Fellowship · IIT Bombay Research Internship Award · Rank #1 in department · 53 in total on [megazron.com](https://megazron.com/#awards)
-
-**Stack** — ROS 2 · Isaac Lab · MuJoCo · Gazebo · Kortex API · PyTorch · TensorFlow · OpenCV · VLA · SAC · PPO · ACT · diffusion policies · Python · C++ · Julia · MATLAB · TypeScript · Jetson · Raspberry Pi · FPGA · Docker · Linux
-
-</details>
-
-<p align="center"><sub><i>Builds the impossible with science… because science works — 10 billion percent.</i></sub></p>
+<p align="center">Play: <a href="arm/README.md">Teach the arm</a> · <a href="battle/README.md">Robot battle</a> · <a href="https://megazron.github.io/MegaZroN/">live 3D</a></p>

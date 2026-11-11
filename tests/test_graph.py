@@ -106,7 +106,9 @@ def test_arm():
     arm = ROOT / "arm"
     readme_starts = {t for t, label in links(ROOT / "README.md") if label.startswith("Pick ")}
     folder_starts = {t for t, label in links(arm / "README.md") if label.startswith("Pick ")}
-    check(readme_starts == folder_starts and len(readme_starts) == 3, "profile README and arm/README.md offer different start buttons")
+    check(len(folder_starts) == 3, "arm/README.md must offer three start buttons")
+    if readme_starts:  # the profile README may link the game instead of showing its buttons
+        check(readme_starts == folder_starts, "profile README and arm/README.md offer different start buttons")
     done, runs, visited = 0, set(), set()
 
     def walk(page, taught, holding):
