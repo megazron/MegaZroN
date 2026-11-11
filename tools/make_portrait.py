@@ -70,10 +70,38 @@ def textcell(r,c):
     if reg=="FACE": return False
     if reg in ("VISION","ROOTS","HEART"): return v<q[2]
     return v<q[1]
-RAMP=" .,:;-=+*#%@"   # light skin to dark features
+import os
+RAMP=os.environ.get("RAMP"," .,:;-=+*#%@")   # light skin to dark features
+GAMMA=float(os.environ.get("GAMMA","1.0"))
 # the face gets its own shading: local contrast, then each character is the average of its cell,
 # so thin dark lines like the glasses frame still show as partial tone
 _fs=cv2.resize(cv2.createCLAHE(clipLimit=2.0,tileGridSize=(4,4)).apply(g0).astype(np.float32)/255,(COLS,rows),interpolation=cv2.INTER_AREA)
+# the face is drawn as a pen sketch: traced outlines, each drawn with the character that matches its direction.
+# Lines read the same on GitHub's light and dark themes, so it looks like me in both.
+import math
+def trace_sketch():
+    bgr=cv2.cvtColor(np.asarray(rgb),cv2.COLOR_RGB2BGR)
+    gg=cv2.bilateralFilter(cv2.cvtColor(bgr,cv2.COLOR_BGR2GRAY),9,40,9)
+    e=cv2.Canny(cv2.GaussianBlur(gg,(0,0),1.6),18,50)
+    cnts,_=cv2.findContours(e,cv2.RETR_LIST,cv2.CHAIN_APPROX_NONE)
+    cw=bgr.shape[1]/COLS; chh=bgr.shape[0]/rows
+    grid=[[" "]*COLS for _ in range(rows)]; sc=np.zeros((rows,COLS))
+    for cnt in cnts:
+        L=cv2.arcLength(cnt,False)
+        if L<45: continue
+        pts=cnt[:,0,:].astype(float)
+        for i in range(0,len(pts)-6,2):
+            (x0,y0),(x1,y1)=pts[i],pts[i+6]; x,y=(x0+x1)/2,(y0+y1)/2
+            c=int(x/cw); r=int(y/chh)
+            if not(0<=r<rows and 0<=c<COLS) or L<=sc[r,c]: continue
+            ang=(math.degrees(math.atan2(y1-y0,x1-x0))+180)%180
+            if ang<20 or ang>160: k="_" if (y/chh-r)>0.55 else "-"
+            elif ang<70: k="\\"
+            elif ang<110: k="|"
+            else: k="/"
+            grid[r][c]=k; sc[r,c]=L
+    return grid
+SKETCH=trace_sketch()
 _face=None
 def fq(v):
     """Where this value sits among the face's own tones (0 dark .. 1 light), so the face uses the whole ramp."""
@@ -90,6 +118,7 @@ def fn(v):
         vals=np.array([_fs[r,c] for r in range(rows) for c in range(COLS) if not mask[r,c] and region(r,c)=="FACE"])
         _fr=(np.percentile(vals,2),np.percentile(vals,98))
     return min(1,max(0,(v-_fr[0])/(_fr[1]-_fr[0])))
+SEP=" "; FILL="·"
 def tone(v):
     if v<q[2]: return ";"
     if v<q[3]: return ":"
@@ -111,8 +140,7 @@ for r in range(rows):
     for c in range(COLS):
         if mask[r,c]: continue
         if region(r,c)=="FACE":
-            d=1-fn(_fs[r,c])
-            line[c]=RAMP[min(len(RAMP)-1,int(d*len(RAMP)))]
+            line[c]=SKETCH[r][c]
         else: line[c]=tone(a[r,c])
     c=0
     while c<COLS:
@@ -125,8 +153,8 @@ for r in range(rows):
             w=take(reg,e-x)
             if not w: break
             line[x:x+len(w)]=list(w); x+=len(w)
-            if x<e: line[x]=" "; x+=1        # a space between phrases
-        while x<e: line[x]="·"; x+=1          # leftover too short for any word
+            if x<e: line[x]=SEP; x+=1        # between phrases: a heavy mark keeps the black hair and jacket dark
+        while x<e: line[x]=FILL; x+=1         # leftover too short for any word
         c=e
     out.append("".join(line).rstrip())
 open(sys.argv[3],"w").write("\n".join(out)+"\n")

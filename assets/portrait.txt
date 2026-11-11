@@ -12,29 +12,29 @@
    STICKERSOUNDS ROBOT·CHALAO MSc·ROBOTICS IEEE·InGARSS SCENEBREAKER LET·HIM·COOK
   AURA·FARMING IJSRST·2024 LiDAR;;;;;;·;:::::::::::;UNITREE·GO2 HUAWEI·R&D DEEP·RL
   ISPRS·2025 FUSION·360 JULIA::··········       ·····::;;TWIN·TRUTH ISRO·NARL C++
-  6·PATENTS TWIN·ARMS OCTO;:···:::,,......    ...,,:::;-=+#@SAC·PILOT AGENT·NET ··
-   ISAAC·LAB GDSC·LEAD ·;:···;;:::,,,........ ...,,,::::;;=*%@ICCC·2025 GeoTRACE
-   REPOLENS MARK·43 VLA;:··--;;:::,,..          ...,,,:::;-+*%@@IEEE·YP SmolVLA ·
-    OpenVLA PYTORCH ACT:·----;;::,,.             ..,,,,:;;--+%@@@@AYRPORT HBR·REP
-      MuJoCo QISKIT C++:=--;;::,..                ..,,:::;;--=*@@@@LIBERO JETSON
-         NO·CAP GOATED +=---;::::;:,,.....,,,;=++*****++=+**=-=+#@@@KINOVA·GEN3
-          ROBOT·STUDIO#**##%%%%%#*++=-;:::;=+*##**=;:;;---=++++++#@@@HUAWEI·R&D
-            ISPRS·2025*%#+==--==+*#%##*=;;=*######%###**##***=---*@@@ISRO·NARL
-             GeoTRACE#*#*****##%%@%%@%*;  .=*#**=;+****#*++++;;;=+#@@@DEEP·RL
-              MARK·43%**#%@%%**##++=-*=:  .:=-,,:::;;;:,,,,;;:;;-+*%@@IEEE·YP
-        ,^,    zronOS%+= BISMILLAH ,--;,. .,:;;, TAWAKKUL ,,::;-==*%@@MuJoCo
-       |CAN|    ROS· RABBI·ZIDNI·ILMA ,.  .,:::; LA·TAHZAN ,:;;-=+*#@%;OCTO
-       |SAT|      VLA@*=-;:,,,,,...,;;:.  .:;;:;,      ...,::;-=++*#%*;ACT      __
-        \|/        ··@*+=-;;:,,..  ;*%%#++*%@@%#-     ...,,:;--=+**##*C++      [__]==o
-                     ·#*+=-;;::,,..:####%%#+-;;:     ..,,::;-==+*###+···          \\
-                      ##*+=--;;:,,,,,:;:,:,...........,,::;-==+**##%*::            \\__
-                       %#**+=--;;::;;;-==-=+*+=-;;;;;::::;--=+**##%@VLA         ___|__|___
-                       :%##*+==---=ALHAMDULILLAH+*+=--;;;--=+**#%%@OCTO
-                         ·%#**++==+ALHAMDULILLAH=-;;;---=++**##%%ACT
-                          ·%###**+==+*##%%%%%%#*+==-====+**##%%@C++
-                            ·%%##**++++===-;:::::;;---=+**#%%@;;;··
-                             ··:%#*+=;;::::,,,,,::;;-=+#%%@;;;::;··
-                             MOGGED:*+=---------==+*#%@ARISE::::XLR8
+  6·PATENTS TWIN·ARMS OCTO;:···                             SAC·PILOT AGENT·NET ··
+   ISAAC·LAB GDSC·LEAD ·;:···                                 ICCC·2025 GeoTRACE
+   REPOLENS MARK·43 VLA;:··                                     IEEE·YP SmolVLA ·
+    OpenVLA PYTORCH ACT:·                                   |\    AYRPORT HBR·REP
+      MuJoCo QISKIT C++:                      _/____ ______  \\\   LIBERO JETSON
+         NO·CAP GOATED   _________           /_/----------\\\  \\\  KINOVA·GEN3
+          ROBOT·STUDIO|/// --_ ---\\\\  __//      /-        -|__\\   HUAWEI·R&D
+            ISPRS·2025//  ----_____   |    |  //---------_  ||  \\|  ISRO·NARL
+             GeoTRACE||   ////------ ||   \|\/-//\\-----/-- ||    |   DEEP·RL
+              MARK·43|    / //\--///\|||   ||\\---------- //|     ||  IEEE·YP
+        ,^,    zronOS|\\ BISMILLAH //||      \\\ TAWAKKUL //       |  MuJoCo
+       |CAN|    ROS· RABBI·ZIDNI·ILMA          \ LA·TAHZAN         |  ;OCTO
+       |SAT|      VLA|     ------  |            |                  |||;ACT      __
+        \|/        ··|             |\/__/ ///-\ |                   | C++      [__]==o
+                     ·|            |\-_\   ----/                     ···          \\
+                      |\                                           /_::            \\__
+                       \             //----/--\\\\                ||VLA         ___|__|___
+                       :\          ALHAMDULILLAH---/               OCTO
+                         ·         ALHAMDULILLAH                 ACT
+                          ·\           ---------                C++
+                            ·          /_----                 ;;;··
+                             ··:                           ;;;::;··
+                             MOGGED:                   ARISE::::XLR8
                              THE·MAN·WHO·LEFT·IT·ALL·BEHIND:FOUR·ARMS
                            ··GENIUS·TRILLIONAIRE·SHORMA·INNOVATOR ·····
                         ·····DOMAIN·EXPANSION·INFINITE·POTENTIAL RIZZ ····
