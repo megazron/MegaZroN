@@ -38,18 +38,18 @@
                           ·@~-;;:,,.:~+*@@@@@@*=~-:,,,,,:;;-~=++*VLA
                             ·;~~-;;:::;;--;:.  . ..,,.,:;-~=+++;;··
                              ··:==-;,              ..,-=+++*;;::;··
-                             MOGGED:~;;:,.,,,:,::-~=+*&&RIZZ::::SLAY
-                             THE·MAN·WHO·LEFT·IT·ALL·BEHIND:MIC·CHECK
-                           ··GENIUS·TRILLIONAIRE·SHORMA·INNOVATOR ONG ·
-                        ·····PROOF·THAT·TONY·STARK·HAS·A·HEART DELULU ····
-                  STAY·HUMBLE I·AM·THE·HOPE·OF·THE·UNIVERSE SIX·SEVEN ·······
-             ·······ONG:::··:[SYSTEM]·YOU·HAVE·LEVELED·UP BLACK·FLASH:RIZZ ········
-      HOUSE·CAPTAIN::::::::::WITH·THIS·TREASURE·I·SUMMON SUPER·SAIYAN:SLAY QUIZ·CHAMPION
-MUM·AND·DAD:::::·::::::::::::I·ALONE·AM·THE·HONORED·ONE INFINITE·VOID:RIZZ ·······:·········
-·······:::::::·:::::::::::::STAND·PROUD·YOU'RE·STRONG ...GOOD·FOR·YOU::ONG ········:::::::··
+                             MOGGED:~;;:,.,,,:,::-~=+*&&XLR8::::RIZZ
+                             THE·MAN·WHO·LEFT·IT·ALL·BEHIND:FOUR·ARMS
+                           ··GENIUS·TRILLIONAIRE·SHORMA·INNOVATOR ·····
+                        ·····I·AM·THE·HOPE·OF·THE·UNIVERSE KAMEHAMEHA ····
+                  STAY·HUMBLE [SYSTEM]·YOU·HAVE·LEVELED·UP BEN·10,000 ·······
+             ··········:::··:WITH·THIS·TREASURE·I·SUMMON GOOD·FOR·YOU:SLAY ········
+      HOUSE·CAPTAIN::::::::::I·ALONE·AM·THE·HONORED·ONE INFINITE·VOID:XLR8 QUIZ·CHAMPION
+MUM·AND·DAD:::::·::::::::::::STAND·PROUD·YOU'RE·STRONG IT'S·HERO·TIME:RIZZ ·······:·········
+·······:::::::·:::::::::::::ANYONE·CAN·WEAR·THE·MASK DOMAIN·EXPANSION::············:::::::··
 ··:··:·::::::··:::::::::::··:WITH·GREAT·POWER·COMES·GREAT·RESPONSIBILITY ·B·TECH·ECT :::::::
-·:::::::::::····:::::::::::::ANYONE·CAN·WEAR·THE·MASK SORCERER·KILLER::ONG ···:·······::::::
-:::::::::::::······:::::::::::MAIN·CHARACTER·ENERGY WHATEVER·IT·TAKES:::··FAMILY·FIRST::::::
+·:::::::::::····:::::::::::::HEAVENLY·RESTRICTION TEN·BILLION·PERCENT::·······:·······::::::
+:::::::::::::······:::::::::::THIS·IS·EXHILARATING ZERO·CURSED·ENERGY:::··FAMILY·FIRST::::::
 ```
 
 <p align="center"><sub>My eyes hold my vision and my faith · my lips say Alhamdulillah · my head holds what I build and what I have won · my heart holds what I love · my shoulders stand on where I come from</sub></p>
