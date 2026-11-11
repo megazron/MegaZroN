@@ -23,22 +23,22 @@
    E·I/india·hackaO·CON::·····                      · ·····::tNECT  MARK·43  ThEX
     T·Ton·winneOr··ROB2:·····                          ·····:OT  ROBOT·STUDIO023
      zron  sOS mar ROt·:···                            ······:BOT·inCHdia·hALAaO
-         BEYckONaBUILD····                   ·::::::THE·IM::···:POSSID·thonSAGIT
-         TAR·wIinBLE·WI··:TH·:::::::··  ····::SCIENC:::::::E  :::10·Bner·202US
-           HU4  AILLIO:N·PERCENT:::  ::::::R:::::::·········OBOTS·THAcaWnsaEI·R
-        ,^, &Dt·2T·SEE:·::·· ···::::THI:··:NK·AND·MOVE  EM::B:···:ODI0·22·wUK
-       |CAN|  IinED·AI:::·::  VISION·LA:  ·NGUAGE:·ACTION  :R· ··:OBOMnPERIAL
-       |SAT|  ·CeTS·FO::::R·EVERYONE  :·   ·B:··:::::::··  ::  ···:RAOLrLE GE   __
-        \|/   ·L IN·COM··::::::::::·:P··    ·::·          ·:   ···:UTO6·NDON   [__]==o
-                 ER·INT:·  ·      ··::·     ··::···········   ····:ER;paMSc·      \\
-                RFACES:::·············      ···:··            ····:  ;;OBOT        \\__
+         BEYckONaBISMIL···                   ·::::::LAH  R::···:ABBI·D·thonSAGIT
+         TAR·wIinZIDNI···:ILM:::::::··  ····::A  BUI:::::::LD·:::THE·ner·202US
+           HU4  AIMPOS:SIBLE  IN:::NA::::::·:::::::·········MA'AL·USRcaWnsaEI·R
+        ,^, &Dt·2I·YUS:R::·· ···::::A  :··:NEVER·GIVE·UP  ::L:···:A·T0·22·wUK
+       |CAN|  IinAHZAN:::·::·INNALLAHA·:  ·MA'ANA:  10·BILL:I· ··:ON·MnPERIAL
+       |SAT|  ·CePERCE::::NT  TAWAKKUL:·   · :··:::::::··  ::  ···: WOLrLE GE   __
+        \|/   ·L A·MA·T··::::::::::·:A··    ·::·          ·:   ···:WFO6·NDON   [__]==o
+                 IQI·IL:·  ·      ··::·     ··::···········   ····:LA;paMSc·      \\
+                R·BILL:::·············      ···:··            ····:AH;;OBOT        \\__
                   ICS :··· ······· ····   ··::···     ··    ······:: :;ISR      ___|__|___
                    O·N:······      ::ARL:::  IIte     ·· ········:::T;·BO
                      M;:·····      :BAYnts  ::;;·    ············:::;·:
                       S:·······     ·····:··        ············:::M:··:
                        ;:······      ················· ·········:::ART·
-                        :::····· ····:;;;eIeNgDI;:::···········:::·A·H
-                       :A:::·······:CKATw;;:::::hH;:··········:::;ON·WI
+                        :::····· ····:ALHAMDULILLAH:···········:::·A·H
+                       :A:::·······:CKALHAMDULILLAH:··········:::;ON·WI
                          N::·······:;::······:::·············:::;NER
                           ·;::·······:;;e2023  :::·········:::;;eSMA
                            Rl::::····:::;;;;:::···········:::;;;cT·
@@ -60,7 +60,7 @@ SHoISlH  balYObhim·collegTTe ;I;;;ider·NG ki SINGING  GAMng;;;;;;;; ;AM·BEST�
 k·1·in·departm ASSAent  a·p·j:N;;;;;;r;;;;;;;;;;;;;;;;;;;;;;;;;;;;;v;·abLAMU·ALAIKUM  Ndul·k
 ```
 
-<p align="center"><sub>My eyes hold my vision · my head holds what I build and what I have won · my heart holds what I love · my shoulders stand on where I come from</sub></p>
+<p align="center"><sub>My eyes hold my vision and my faith · my lips say Alhamdulillah · my head holds what I build and what I have won · my heart holds what I love · my shoulders stand on where I come from</sub></p>
 
 <p align="center">
 <a href="https://megazron.com">megazron.com</a> ·

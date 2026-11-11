@@ -42,8 +42,9 @@ while q:
         R,C=r+dr,c+dc
         if 0<=R<rows and 0<=C<COLS and bg[R,C] and not mask[R,C]: mask[R,C]=1; q.append((R,C))
 # what each part of me is made of
-VISION=("BUILD·THE·IMPOSSIBLE·WITH·SCIENCE  10·BILLION·PERCENT  ROBOTS·THAT·SEE·THINK·AND·MOVE  "
-        "EMBODIED·AI  VISION·LANGUAGE·ACTION  ROBOTS·FOR·EVERYONE  BRAIN·COMPUTER·INTERFACES  NEUROREHAB  ")
+VISION=("BISMILLAH  RABBI·ZIDNI·ILMA  BUILD·THE·IMPOSSIBLE  INNA·MA'AL·USRI·YUSRA  NEVER·GIVE·UP  "
+        "LA·TAHZAN·INNALLAHA·MA'ANA  10·BILLION·PERCENT  TAWAKKUL  WA·MA·TAWFIQI·ILLA·BILLAH  DREAM·BIG·WORK·HARD  "
+        "HASBUNALLAHU·WA·NI'MAL·WAKIL  KEEP·GOING  ")
 MIND=("TEXT·TO·ROBOT  ROBOT·STUDIO  zronOS  ROBOT·CHALAO  BEYOND·SAGITTARIUS  HUAWEI·R&D·UK  IMPERIAL·COLLEGE·LONDON  "
       "MSc·ROBOTICS  ISRO·NARL  IIT·BOMBAY  SMART·INDIA·HACKATHON·WINNER·2023  SMART·INDIA·HACKATHON·WINNER·2024  "
       "CANSAT·2022·WINNER  6·PATENTS  EEG·WHEELCHAIR  COAXIAL·DRONE  DEBRIS·HUNTER  TWIN·ARMS  SAC·PILOT  AGENT·NET  "
@@ -108,4 +109,12 @@ for name, r0, c0 in PLACES:
         continue  # never draw over the face
     for i, x in enumerate(art):
         L = lines[r0 + i]; lines[r0 + i] = L[:c0] + x.ljust(w) + L[c0 + w:]
+# the lips say it
+MOUTH_Y, MOUTH_X = (598, 632), 530        # lips in source pixels (top, bottom) and centre x
+r0 = int((MOUTH_Y[0] - box[1]) / (box[3] - box[1]) * rows); r1 = int(round((MOUTH_Y[1] - box[1]) / (box[3] - box[1]) * rows))
+cc = int((MOUTH_X - box[0]) / (box[2] - box[0]) * COLS)
+word = "ALHAMDULILLAH"
+for r in range(r0, r0 + 2):  # upper and lower lip
+    L = lines[r].ljust(COLS); c0 = cc - len(word) // 2
+    lines[r] = L[:c0] + word + L[c0 + len(word):]
 open(sys.argv[3], "w").write("\n".join(l.rstrip() for l in lines) + "\n")
