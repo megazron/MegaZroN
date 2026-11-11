@@ -52,7 +52,7 @@ MUM·AND·DAD:::::·::::::::::::GLORY·IS·FOREVER BEN·10,000 SUPER·SAIYAN:RIZ
 :::::::::::::······:::::::::::WITH·THIS·TREASURE·I·SUMMON FINAL·FLASH:::··FAMILY·FIRST::::::
 ```
 
-<p align="center"><sub>My eyes hold my vision and my faith · my lips say Alhamdulillah · my head holds what I build and what I have won · my heart holds what I love · my shoulders stand on where I come from</sub></p>
+<p align="center">Masha'Allah 💚!</p>
 
 <p align="center">
 <a href="https://megazron.com">megazron.com</a> ·
