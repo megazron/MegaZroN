@@ -12,4 +12,4 @@
 
 <p align="center"><sub>That was the last stage. All three bots are down.</sub></p>
 
-<p align="center"><sub><a href="../README.md">Restart battle</a> · <a href="https://github.com/megazron">Back to profile</a> · <a href="https://megazron.github.io/MegaZroN/">Play the real-time 3D version</a> · <a href="../../arm/README.md">Teach the arm</a></sub></p>
+<p align="center"><sub><a href="../README.md">Restart battle</a> · <a href="https://github.com/megazron">Back to profile</a> · <a href="https://megazron.github.io/MegaZroN/battle/">Play the real-time 3D version</a> · <a href="../../arm/README.md">Teach the arm</a></sub></p>

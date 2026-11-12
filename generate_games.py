@@ -107,7 +107,7 @@ def footer(here, other_label, other_href, again=None):
     if again:
         links.append(f'<a href="{again[1]}">{again[0]}</a>')
     links += [f'<a href="{PROFILE_URL}">Back to profile</a>',
-              f'<a href="{PAGES_URL}">Play the real-time 3D version</a>',
+              f'<a href="{PAGES_URL}{"battle/" if here == "battle" else ""}">Play the real-time 3D version</a>',
               f'<a href="{other_href}">{other_label}</a>']
     return '<p align="center"><sub>' + " · ".join(links) + "</sub></p>\n"
 

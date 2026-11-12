@@ -8,4 +8,4 @@
 <a href="start.md"><img src="../btn/again.svg" height="50" alt="Play again"></a>
 </p>
 
-<p align="center"><sub><a href="../README.md">Restart battle</a> · <a href="https://github.com/megazron">Back to profile</a> · <a href="https://megazron.github.io/MegaZroN/">Play the real-time 3D version</a> · <a href="../../arm/README.md">Teach the arm</a></sub></p>
+<p align="center"><sub><a href="../README.md">Restart battle</a> · <a href="https://github.com/megazron">Back to profile</a> · <a href="https://megazron.github.io/MegaZroN/battle/">Play the real-time 3D version</a> · <a href="../../arm/README.md">Teach the arm</a></sub></p>
