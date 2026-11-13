@@ -62,3 +62,4 @@ zzzzzzzzzzzzzzZZZZZzzzzzzzzzzzZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzzzzzZZZZZZ
 <a href="https://megazron.medium.com">Medium</a>
 </p>
 <p align="center">Play: Teach the arm (<a href="arm/README.md">README</a> · <a href="https://megazron.github.io/MegaZroN/">live 3D</a>) · Robot battle (<a href="battle/README.md">README</a> · <a href="https://megazron.github.io/MegaZroN/battle/">live 3D</a>)</p>
+<p align="center"><img src="https://komarev.com/ghpvc/?username=megazron&label=Profile%20views&color=3dfa46&style=flat" alt="Profile views" /></p>
